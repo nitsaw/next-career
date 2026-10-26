@@ -1,0 +1,2101 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14243B">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Next Career">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Your Next Career, Powered by AI: companion app</title>
+<meta name="description" content="Companion app for the book Your Next Career, Powered by AI: exercises, a 100-point score, a prompt catalogue and measures of your progress.">
+<meta property="og:title" content="Your Next Career, Powered by AI: companion app">
+<meta property="og:description" content="Do the book's exercises, track a 100-point score and keep your own catalogue of prompts.">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAABKklEQVR42u2YsQ0CMQxFcxaihIaaiu4qJDoaehaADZiAIZiADWABegZAoroF2IArqahASEQil9hOLL6rO530/Z+s+OtSjSZzZ7nIGS8AAAAAxqtXlJvrtn0/T3cDYxP4dP/9WjqA124IAxXrPpABWwgAqmv0sVpKmKhvrhkfvJ9+LlPK7v7FsI5w3wFA1L2XwYtUehIHmv7LLdQ/npSdBXYkdkVN9865Cj/1ANBM4rreyFlpmr3sBETdR+tTIe6ju+AQWwGIO2EK55ikt4S0PpLYVpAFXjZ1qsAbOIYJSLhPl6W87tPFEWQAUAJI3BVy4qTTRk4WSWwric+zIUvXxeWeYQJc7nmlSL8lryCCzAoA47HjFST9lrxSCDIAAAAAAAAAAAAAAADkqyfpk1RFfAx1bAAAAABJRU5ErkJggg==">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAC50lEQVR42u3dsU2jQRCAUWMhQkiIicgcIZGRkNMAdEAFFEEFdAANkFMAEpEboAMcEhGQIExgZP+7M7PvC48LvKun+Rd7fbd3fHoxk/5qbgsEh+AQHIJDcAgOwSE4BIfgkOAQHIJDcAgOwSE4BIfg0HDt24KYvd2tfv3J2f1h49ew5/Z5cBPrNVPisZJMxuZ/zeQYi0XjEWJyZJXRYITAITjKjY0GwwOOxDKm9gGH4BAcoz1TJn2ywCE4BIfgEByCY8x2+LHZRJ/AwSE49P/6XxP8vL4advcX77PlyWPMZ8qs72WfkVn8bBsfk9732cdCgc4cZKw9XG4Cjo2ZryaE8rH586XNBfTWk8PY2H6ENPtqgskR1Mf6FPn+0cHTc7MX0/S3FWNjJzXz4U0wwSE4BIfK4Wh50nYaNTlUCIfhkWj3TA5FwmF4ZNk39zmwCIkDkeBT1j/7JAdSwSE4BIfgEByCQ1Xqf8F4sbgddveXy4fIL6/nm2Ajs0hBpA8OLFIQmZMRpIDb4kCqMDiMjUSbY3IoBg5jI9cWmRyCQ3AIDpXDEfyjhAiF2iKTQ2FwGB6JNsfkUCQchkeWbXGfA4uQOBBxE0zOHIJDcEhwCA7BITjUpP5fh3y7W1Xd3Gb/a85E9XwTrDCLGkT64BiERXYiczKs2oFU4XGMOTaSrt3kUAwcI4+NjDtgcggOwSE4VA5H9s8aRtsBk0NhcIw8PNKt3eRQJBxjDo+Mq3afA4uQOMoTcRNMzhyCQ4JDcAgOwSE4FKP+X4d8OT/Ku32Xrx+FcfR8Eyw1ixGI9MFRhkVtInMyrMuBVOFxVB0bJVdncigGjtpjo94aTQ7BITgEh8rhqP1JRL01mhwKg6P28Ci2OpNDkXBUHR711uU+BxYhcRQg4iaYnDkkOASH4BAcgkNwCA7BITgEhwSH4BAcgkNwCA7BITgEh+AQHBIcgkNwCA7BITgEh+AQHIJDgkNwCA7BITgEh+BQ7r4AY6a8lTUTvRkAAAAASUVORK5CYII=">
+<style>
+*,::before,::after{box-sizing:border-box;border-width:0;border-style:solid}
+html{-webkit-text-size-adjust:100%;background:#EAF0F4}
+body{margin:0;background:#EAF0F4;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#1F2D3D;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p{margin:0}
+button,input,textarea{font:inherit;color:inherit;margin:0}
+button{background:none;padding:0;cursor:pointer;text-align:inherit;-webkit-tap-highlight-color:transparent}
+button:disabled{cursor:default;opacity:.85}
+a{color:inherit;text-decoration:none;display:inline-block}
+svg,img{display:block;vertical-align:middle}
+textarea,input{outline-color:#0E7C86}
+.app-shell{height:100vh;height:100dvh;box-shadow:0 0 0 1px #D5DEE6}
+.boot{max-width:420px;margin:30vh auto 0;padding:24px;text-align:center;color:#14243B;font-size:15px;line-height:1.5}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+.absolute{position:absolute}
+.bottom-0{bottom:0}
+.flex{display:flex}
+.flex-1{flex:1 1 0%}
+.flex-col{flex-direction:column}
+.flex-wrap{flex-wrap:wrap}
+.font-bold{font-weight:700}
+.font-semibold{font-weight:600}
+.gap-0\.5{gap:0.125rem}
+.gap-1{gap:0.25rem}
+.gap-2{gap:0.5rem}
+.gap-3{gap:0.75rem}
+.gap-4{gap:1rem}
+.gap-5{gap:1.25rem}
+.grid{display:grid}
+.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.inline-block{display:inline-block}
+.inline-flex{display:inline-flex}
+.inset-0{top:0;right:0;bottom:0;left:0}
+.italic{font-style:italic}
+.items-center{align-items:center}
+.items-start{align-items:flex-start}
+.justify-between{justify-content:space-between}
+.justify-center{justify-content:center}
+.leading-snug{line-height:1.375}
+.left-0{left:0}
+.left-4{left:1rem}
+.mb-1{margin-bottom:0.25rem}
+.mb-2{margin-bottom:0.5rem}
+.mb-3{margin-bottom:0.75rem}
+.mb-4{margin-bottom:1rem}
+.mb-6{margin-bottom:1.5rem}
+.min-h-screen{min-height:100vh}
+.min-w-0{min-width:0}
+.mt-0\.5{margin-top:0.125rem}
+.mt-1{margin-top:0.25rem}
+.mt-1\.5{margin-top:0.375rem}
+.mt-2{margin-top:0.5rem}
+.mt-3{margin-top:0.75rem}
+.mt-4{margin-top:1rem}
+.mt-5{margin-top:1.25rem}
+.mt-6{margin-top:1.5rem}
+.mx-auto{margin-left:auto;margin-right:auto}
+.overflow-hidden{overflow:hidden}
+.overflow-x-auto{overflow-x:auto}
+.overflow-y-auto{overflow-y:auto}
+.p-3{padding:0.75rem}
+.p-4{padding:1rem}
+.p-5{padding:1.25rem}
+.pb-1{padding-bottom:0.25rem}
+.pb-24{padding-bottom:6rem}
+.pb-4{padding-bottom:1rem}
+.pb-6{padding-bottom:1.5rem}
+.pointer-events-none{pointer-events:none}
+.pt-5{padding-top:1.25rem}
+.pt-6{padding-top:1.5rem}
+.pt-8{padding-top:2rem}
+.px-3{padding-left:0.75rem;padding-right:0.75rem}
+.px-4{padding-left:1rem;padding-right:1rem}
+.px-5{padding-left:1.25rem;padding-right:1.25rem}
+.py-1{padding-top:0.25rem;padding-bottom:0.25rem}
+.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}
+.py-2{padding-top:0.5rem;padding-bottom:0.5rem}
+.relative{position:relative}
+.right-0{right:0}
+.right-4{right:1rem}
+.rounded-2xl{border-radius:1rem}
+.rounded-full{border-radius:9999px}
+.rounded-lg{border-radius:.5rem}
+.rounded-md{border-radius:.375rem}
+.rounded-xl{border-radius:.75rem}
+.shrink-0{flex-shrink:0}
+.text-center{text-align:center}
+.text-left{text-align:left}
+.text-sm{font-size:.875rem;line-height:1.25rem}
+.text-xs{font-size:.75rem;line-height:1rem}
+.top-0{top:0}
+.transition-colors{transition:color .15s,background-color .15s,border-color .15s}
+.underline{text-decoration:underline}
+.w-full{width:100%}</style>
+</head>
+<body>
+<div id="root"><div class="boot">Loading your companion app…</div></div>
+<noscript><div class="boot">This companion app needs JavaScript. Please enable it and reload the page.</div></noscript>
+<script>
+(function () {
+  var root = document.getElementById('root');
+  function load(srcs, ok, fail) {
+    var i = 0;
+    (function next() {
+      if (i >= srcs.length) { fail(); return; }
+      var t = document.createElement('script');
+      t.src = srcs[i++]; t.crossOrigin = 'anonymous'; t.onload = ok;
+      t.onerror = function () { t.parentNode && t.parentNode.removeChild(t); next(); };
+      document.head.appendChild(t);
+    })();
+  }
+  function fail() { root.innerHTML = '<div class="boot">Could not load the app. Please check your internet connection and refresh the page.</div>'; }
+  window.__boot = function () {
+    load(['https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js', 'https://unpkg.com/react@18.2.0/umd/react.production.min.js'], function () {
+      load(['https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js', 'https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js'], function () { window.__start(); }, fail);
+    }, fail);
+  };
+})();
+</script>
+<script>
+window.__start = function () {
+"use strict";
+"use strict";
+const { useState, useEffect, useMemo, useRef } = React;
+/* ---- icons (inline SVG) ---- */
+const mkIcon = (paths) => function Icon({ size = 24, color = "currentColor", strokeWidth = 2, fill = "none", style, className }) {
+    return React.createElement("svg", { width: size, height: size, viewBox: "0 0 24 24", fill: fill, stroke: color, strokeWidth: strokeWidth, strokeLinecap: "round", strokeLinejoin: "round", style: style, className: className, "aria-hidden": "true" }, paths);
+};
+const Home = mkIcon(React.createElement(React.Fragment, null,
+    React.createElement("path", { d: "M3 10.5 12 3l9 7.5" }),
+    React.createElement("path", { d: "M5 9.5V21h14V9.5" }),
+    React.createElement("path", { d: "M10 21v-6h4v6" })));
+const MapIcon = mkIcon(React.createElement(React.Fragment, null,
+    React.createElement("path", { d: "M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z" }),
+    React.createElement("path", { d: "M9 4v14M15 6v14" })));
+const BarChart3 = mkIcon(React.createElement(React.Fragment, null,
+    React.createElement("path", { d: "M4 20V4" }),
+    React.createElement("path", { d: "M4 20h16" }),
+    React.createElement("path", { d: "M9 16v-5M14 16V7M19 16v-8" })));
+const User = mkIcon(React.createElement(React.Fragment, null,
+    React.createElement("circle", { cx: "12", cy: "8", r: "4" }),
+    React.createElement("path", { d: "M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" })));
+const Check = mkIcon(React.createElement("path", { d: "M4 12.5 9.5 18 20 6.5" }));
+const ChevronRight = mkIcon(React.createElement("path", { d: "m9 5 7 7-7 7" }));
+const ChevronLeft = mkIcon(React.createElement("path", { d: "m15 5-7 7 7 7" }));
+const Plus = mkIcon(React.createElement("path", { d: "M12 5v14M5 12h14" }));
+const Trash2 = mkIcon(React.createElement(React.Fragment, null,
+    React.createElement("path", { d: "M4 7h16" }),
+    React.createElement("path", { d: "M10 11v6M14 11v6" }),
+    React.createElement("path", { d: "M6 7l1 13h10l1-13" }),
+    React.createElement("path", { d: "M9 7V4h6v3" })));
+const RotateCcw = mkIcon(React.createElement(React.Fragment, null,
+    React.createElement("path", { d: "M3 12a9 9 0 1 0 3-6.7" }),
+    React.createElement("path", { d: "M3 4v5h5" })));
+const Lightbulb = mkIcon(React.createElement(React.Fragment, null,
+    React.createElement("path", { d: "M9 18h6M10 21h4" }),
+    React.createElement("path", { d: "M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3z" })));
+const Trophy = mkIcon(React.createElement(React.Fragment, null,
+    React.createElement("path", { d: "M7 4h10v5a5 5 0 0 1-10 0z" }),
+    React.createElement("path", { d: "M7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3" }),
+    React.createElement("path", { d: "M12 14v4M8 21h8M10 18h4" })));
+const Flame = mkIcon(React.createElement("path", { d: "M12 3c1 4 5 5.5 5 11a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5.3 1.5 1 2 1.5 2 0-3 .5-5.5 1.5-8.5z" }));
+const Star = mkIcon(React.createElement("path", { d: "m12 3 2.7 5.8 6.3.8-4.6 4.4 1.2 6.3L12 17.2 6.4 20.3l1.2-6.3L3 9.6l6.3-.8z" }));
+const Lock = mkIcon(React.createElement(React.Fragment, null,
+    React.createElement("rect", { x: "5", y: "11", width: "14", height: "10", rx: "2" }),
+    React.createElement("path", { d: "M8 11V8a4 4 0 0 1 8 0v3" })));
+const Sparkles = mkIcon(React.createElement(React.Fragment, null,
+    React.createElement("path", { d: "M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z" }),
+    React.createElement("path", { d: "M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z" })));
+const Play = mkIcon(React.createElement("path", { d: "M7 4.5v15l12-7.5z" }));
+const X = mkIcon(React.createElement("path", { d: "M6 6l12 12M18 6 6 18" }));
+/* ------------------------------------------------------------------ tokens */
+const C = {
+    navy: "#14243B", ink: "#1F2D3D", slate: "#5B6B7C", line: "#D5DEE6", mist: "#EAF0F4", paper: "#F6F9FB",
+    teal: "#0E7C86", tealD: "#0A5C64", tealL: "#D5ECEE", amber: "#E39A2D", amberL: "#FBEBCF", coral: "#D4584A",
+    coralL: "#F8DAD5", indigo: "#3F4FA3", indigoL: "#DCE0F3", sage: "#4E9A78", sageL: "#D8EDE3",
+};
+const SERIF = "Georgia, 'Times New Roman', serif";
+// ---- AUTHOR LINK: shown on the Me tab ----
+const AUTHOR = { linkedin: "https://www.linkedin.com/in/nitin-sawant/" };
+const AMBER_T = "#9A6410";
+const onColor = (c) => (c === C.amber ? C.navy : "#fff");
+const SANS = "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif";
+const SECTORS = [
+    { k: "FS", name: "Financial services", c: C.indigo },
+    { k: "MF", name: "Manufacturing", c: "#C77D14" },
+    { k: "RC", name: "Retail and consumer", c: C.coral },
+    { k: "HC", name: "Healthcare", c: C.teal },
+    { k: "OT", name: "Another sector", c: C.slate },
+];
+const STARTERS = {
+    FS: ["Summarise closed loan files", "Draft the weekly operations report", "Compile audit evidence packs", "Draft complaint responses"],
+    MF: ["Shift handover notes", "Weekly quality report draft", "Defect log summaries", "Audit pack preparation"],
+    RC: ["Weekly sell-through summary", "Supplier update digest", "Category forecast narrative", "Store feedback summaries"],
+    HC: ["Visit summaries", "Referral letter drafts", "Scheduling notes", "Weekly clinic report draft"],
+    OT: ["Weekly status report", "Meeting action notes", "Supplier update digest", "Customer request notes"],
+};
+const YN = ["Yes", "Partly", "Not yet"];
+const PAGES = { 1: 2, 2: 12, 3: 21, 4: 33, 5: 42, 6: 50, 7: 57, 8: 66, 9: 74, 10: 81, 11: 91, 12: 98, 13: 105, 14: 110 };
+const YES = (id, q) => ({ id, q, opts: ["Yes", "Not yet"], best: 0 });
+const YN3 = (id, q) => ({ id, q, opts: YN, best: 0 });
+const ROLE = ["Junior staff", "Experienced staff", "Managers", "Reviewers", "Everyone equally"];
+const sum = (a, keys, tbl) => keys.reduce((s, k) => s + tbl[k][a[k]], 0);
+const CHAPTERS = [
+    { n: 1, part: 1, title: "Your job is a bundle of tasks", goal: "Map your week and pick one task you can actually test.",
+        actions: [
+            { id: "1a", title: "Try this now: assembly or judgment?", ref: "Monday morning and the disappearing hour",
+                qs: [
+                    { id: "a", q: "Most of the last document you prepared was…", opts: ["Assembly: collecting and tidying", "A mix of both", "Judgment: weighing and deciding"] },
+                    { id: "b", q: "Where would help be safest to try first?", opts: ["The assembly", "Both", "Neither yet"], best: 0 },
+                ] },
+            { id: "1b", title: "Do it yourself: your task map", ref: "Make your working week visible",
+                qs: [
+                    { id: "t", q: "Which recurring task will you map first?", opts: (s) => STARTERS[s] || STARTERS.OT },
+                    { id: "g", q: "Which working group is it?", opts: ["Prepare", "Analyse", "Decide", "Connect"], best: 0 },
+                    { id: "h", q: "Roughly how many hours a week?", opts: ["Under 1", "1–2", "2–5", "5 or more"] },
+                    { id: "e", q: "If the output is wrong, the cost is…", opts: ["Low: a person catches it first", "Medium: it reaches colleagues", "High: it reaches customers or decisions"], best: 0 },
+                ] },
+            { id: "1c", title: "Quick selection check", ref: "Choose the task you can actually test",
+                qs: [
+                    YES("r", "It repeats at least weekly"), YES("i", "Its inputs are available and permitted"), YES("o", "The desired output is specific"),
+                    YES("v", "A reviewer can check it"), YES("c", "A bad draft would be caught before it causes harm"),
+                ],
+                verdict: (a) => {
+                    const n = Object.values(a).filter((v) => v === 0).length;
+                    return n >= 4 ? { t: `${n}/5: a good first task`, c: C.teal, d: "Start here. If two tasks tie, choose the smaller one." } : { t: `${n}/5: make it smaller`, c: C.amber, d: "Narrow the task until inputs, output and review are all clear." };
+                } },
+            { id: "1d", title: "Your choice and the benefit", ref: "Turn time saved into useful work",
+                qs: [
+                    { id: "rv", q: "Who will review the result before it is used?", opts: ["Me", "A team lead", "A specialist", "Not decided"], best: 0 },
+                    { id: "w", q: "Who benefits if it improves?", opts: ["Me", "My team", "A decision maker", "A customer or patient"] },
+                    { id: "a", q: "What will they be able to do?", opts: ["Review risk earlier", "Miss fewer items", "Spend less time on rework", "Respond faster"], best: 0 },
+                    { id: "q", q: "Will you record waiting time separately from hands-on time?", opts: ["Yes", "Not yet"], best: 0 },
+                ] },
+            { id: "1e", title: "Chapter action: your one-page brief", ref: "Your first week of reinvention", ws: 1,
+                qs: [
+                    { id: "p", q: "Current preparation time per run", opts: ["Under 30 min", "30–60 min", "60–90 min", "Over 90 min"] },
+                    { id: "r", q: "Current review time per run", opts: ["Under 15 min", "15–30 min", "30–60 min", "Over 60 min"] },
+                    { id: "m", q: "The error that would matter most", opts: ["A wrong date or owner", "An invented fact", "A missed risk", "A wrong tone"] },
+                    YES("d", "I can describe the task without using my job title"), YES("x", "I can explain why the output matters"),
+                    YES("w", "I can recognise a wrong answer"), YES("b", "My baseline includes review and correction"),
+                ] },
+        ] },
+    { n: 2, part: 1, title: "Turn experience into an AI advantage", goal: "Make your judgment explicit enough to guide a tool and teach a colleague.",
+        actions: [
+            { id: "2a", title: "Try this now: the harmless update", ref: "The thing you know but never write down",
+                qs: [
+                    { id: "u", q: "An update that made you look closer", opts: ["A vague date", "A status with no owner", "Too-positive wording", "A missing dependency"] },
+                    { id: "k", q: "What did you ask?", opts: ["Who owns it?", "What depends on it?", "When exactly?", "What is the evidence?"] },
+                ] },
+            { id: "2b", title: "Do it yourself: your experience inventory", ref: "Build a map of your judgment",
+                qs: [
+                    { id: "d", q: "Domain knowledge: what do you know best?", opts: ["Process steps", "Dependencies", "Rules and controls", "Customer needs"] },
+                    { id: "j", q: "Judgment: what do you weigh?", opts: ["Trade-offs", "Exceptions", "Risk thresholds", "Priorities"] },
+                    { id: "r", q: "Relationships: what do people bring you?", opts: ["Missing context", "Agreement", "Escalations"] },
+                    { id: "v", q: "Delivery knowledge: what makes it work?", opts: ["Real constraints", "Handoffs", "Timing"] },
+                ] },
+            { id: "2c", title: "Your turn: rewrite the task brief", ref: "Teach the tool what good looks like",
+                qs: [
+                    { id: "au", q: "Who is the output for?", opts: ["A manager deciding", "A customer", "My own team", "An auditor or regulator"] },
+                    { id: "de", q: "What decision will it support?", opts: ["Which issues to intervene in", "Approve or reject", "Inform only", "Prioritise"] },
+                    { id: "so", q: "Which sources may be used?", opts: ["Approved sources only", "Only the notes I paste", "Anything available"], best: 0 },
+                    { id: "fo", q: "Which format helps?", opts: ["Table with source IDs", "Short paragraph", "Bullets"] },
+                    { id: "na", q: "What must not be assumed?", opts: ["Progress from positive wording", "Owners", "Dates", "Impact"] },
+                    { id: "mi", q: "If evidence is missing, the tool should…", opts: ["Write “not provided”", "Make a sensible guess", "Skip that item"], best: 0 },
+                ] },
+            { id: "2d", title: "Do it yourself: create one judgment card", ref: "Make your expertise transferable", ws: 2,
+                qs: [
+                    { id: "tr", q: "Trigger: what makes you look closer?", opts: ["A milestone with no owner or date", "Evidence that is too consistent", "Repeated small flags", "A sudden spike or change"] },
+                    { id: "ac", q: "Action to consider", opts: ["Ask for confirmation", "Seek an independent check", "Escalate to the owner", "Hold the commitment"] },
+                    { id: "ex", q: "Exception that would change your mind", opts: ["It is exploratory only", "No commitment has been made", "It is already verified"] },
+                    { id: "who", q: "Who can resolve missing information?", opts: ["The task owner", "A supplier manager", "A domain expert", "My team lead"] },
+                ] },
+            { id: "2e", title: "Do it yourself: a four-week learning plan", ref: "Learn for the role you want to perform",
+                qs: [
+                    { id: "w1", q: "Week 1: learn…", opts: ["The approved tool and information rules", "Prompt basics"], best: 0 },
+                    { id: "w2", q: "Week 2: practise…", opts: ["The task brief on fictional inputs", "A live report"], best: 0 },
+                    { id: "w3", q: "Week 3: review…", opts: ["Mistakes and refine the workflow", "Nothing: just run it"], best: 0 },
+                    { id: "w4", q: "Week 4: share with…", opts: ["A colleague, then decide what to practise", "Nobody yet"], best: 0 },
+                    { id: "s", q: "Two short sessions a week: can you protect them?", opts: ["Yes", "Not yet"], best: 0 },
+                ] },
+            { id: "2f", title: "Chapter action: your value statement", ref: "Write a better account of your value",
+                qs: [
+                    { id: "h", q: "I use AI to assist with…", opts: ["Drafting", "Extracting facts", "Comparing options", "Checking"] },
+                    { id: "r", q: "I remain responsible for…", opts: ["The final report", "Recommendations", "Commitments", "Decisions"] },
+                    { id: "e", q: "The evidence I have today", opts: ["A fictional test", "A measured pilot", "Peer feedback", "None yet"] },
+                    YES("t", "I invited a colleague to review my experiment"),
+                ] },
+        ] },
+    { n: 3, part: 1, title: "Build your first AI workflow", goal: "Design, test and measure one small bounded workflow.",
+        actions: [
+            { id: "3a", title: "Try this now: the smallest output", ref: "Start with a draft that stays a draft",
+                qs: [
+                    { id: "au", q: "Audience", opts: ["Programme manager", "Director", "My team", "Customer"] },
+                    { id: "le", q: "Maximum length", opts: ["100 words", "150 words", "300 words"] },
+                    { id: "no", q: "It is not authorised to…", opts: ["Send anything", "Change records", "Commit dates", "Invent facts"] },
+                    { id: "au2", q: "Is that limit enforced by permissions, not only the prompt?", opts: ["Yes", "Not yet"], best: 0 },
+                ] },
+            { id: "3b", title: "Do it yourself: design the five stages", ref: "Design the path from input to approval",
+                qs: ["Collect", "Extract", "Draft", "Review", "Approve"].map((s) => ({ id: s, q: `${s}: who owns it?`, opts: ["Me", "Team lead", "Reviewer", "Existing manager", "Nobody yet"] })) },
+            { id: "3c", title: "Run the miniature experiment", ref: "Run a miniature experiment",
+                qs: [
+                    YES("a", "The output kept the uncertainty (no confirmed revised date)"), YES("b", "It did not claim the launch has slipped"),
+                    YES("c", "It did not invent defect severity or customer impact"), YES("d", "In the missing-owner challenge it wrote “not provided”"),
+                ] },
+            { id: "3d", title: "Do it yourself: build your test pack", ref: "Test what can go wrong",
+                qs: [
+                    { id: "or", q: "Ordinary cases", opts: ["3", "2", "1"], best: 0 },
+                    { id: "aw", q: "Awkward cases (missing owner, conflicting dates…)", opts: ["3 or more", "2", "None"], best: 0 },
+                    { id: "st", q: "Stop the trial if…", opts: ["It invents a fact or commitment", "It runs late", "The format is wrong"], best: 0 },
+                    YES("ex", "Expected results written before testing"),
+                ] },
+            { id: "3e", title: "Your decision: continue, change or stop", ref: "Measure the whole job",
+                qs: [
+                    { id: "ev", q: "Total time against baseline", opts: ["Clearly lower", "About the same", "Higher"] },
+                    { id: "er", q: "Raw draft errors logged separately", opts: ["Yes", "Not yet"], best: 0 },
+                    { id: "de", q: "Decision", opts: ["Continue", "Change", "Stop"] },
+                ] },
+            { id: "3f", title: "Chapter action: your pilot card", ref: "Make a 30 day plan you can keep",
+                qs: [
+                    { id: "in", q: "Approved inputs", opts: ["Team workspace notes", "Fictional examples", "Shared mailbox"] },
+                    { id: "rv", q: "Reviewer", opts: ["Me", "Team lead", "A specialist"] },
+                    { id: "cp", q: "Compare against", opts: ["The measured baseline", "My impression"], best: 0 },
+                    { id: "sp", q: "We stop if…", opts: ["An invented commitment or unauthorised action", "It feels slow"], best: 0 },
+                    { id: "dd", q: "Decision date", opts: ["In 2 weeks", "In 30 days", "In 6 weeks"] },
+                ] },
+        ] },
+    { n: 4, part: 2, title: "Your team has a new colleague", goal: "Lead the people side: responsibilities, learning and a team agreement.",
+        actions: [
+            { id: "4a", title: "Do it yourself: write the reviewer’s job", ref: "Separate the responsibilities",
+                qs: [
+                    { id: "rv", q: "The reviewer compares the output with…", opts: ["The sources: dates, owners, dependencies", "Their own sense of what looks right"], best: 0 },
+                    { id: "er", q: "The error that matters most", opts: ["An invented date", "A missing owner", "A softened risk", "A wrong dependency"] },
+                    { id: "cr", q: "The reviewer can correct… without approval", opts: ["Wording and formatting", "Facts and dates", "Anything"] },
+                    { id: "es", q: "The reviewer must escalate…", opts: ["Changes to commitments", "Typos", "Nothing"] },
+                    YES("ac", "A final accountable person is named"),
+                ] },
+            { id: "4b", title: "Where the work moves", ref: "Watch where the work moves",
+                qs: [
+                    { id: "e", q: "Which part became easier?", opts: ["Drafting", "Assembly", "Formatting", "Nothing"] },
+                    { id: "h", q: "Which became someone else’s problem?", opts: ["Checking", "Exception handling", "Source cleanup", "Nothing"] },
+                    YES("i", "That person’s effort is in my measurements"),
+                ] },
+            { id: "4c", title: "Four ways to build capability", ref: "Four ways to build capability",
+                qs: [
+                    { id: "b", q: "Build: which skill will you grow?", opts: ["Verifying against sources", "Writing task briefs", "Spotting drift"] },
+                    { id: "u", q: "Buy: which gap will you name?", opts: ["Data engineering", "Operations support", "Governance lead"] },
+                    { id: "o", q: "Borrow: where will you bring expertise in?", opts: ["Model-risk review", "Security review", "A platform partner"] },
+                    { id: "t", q: "Bot: which routine step can AI take over?", opts: ["Drafting", "Checking formats", "Chasing updates"] },
+                ] },
+            { id: "4d", title: "Adopt the team’s AI working agreement", ref: "Create a team agreement",
+                qs: [
+                    YES("1", "We use approved tools and permitted information"), YES("2", "We name the owner of each assisted workflow"),
+                    YES("3", "We define what review means before relying on an output"), YES("4", "We record mistakes without blaming the reporter"),
+                    YES("5", "We measure preparation, checking and correction together"), YES("6", "We rotate learning opportunities"),
+                    YES("7", "We explain significant changes in responsibilities"),
+                ] },
+            { id: "4e", title: "Chapter action: the twenty-minute discussion", ref: "Create a team agreement",
+                qs: [
+                    { id: "h", q: "The discussion has been…", opts: ["Held", "Scheduled", "Not yet"] },
+                    { id: "c", q: "It covered what becomes easier, new work, who learns, who can stop it, and the review date", opts: ["All five", "Some", "None"], best: 0 },
+                    { id: "co", q: "The team’s biggest concern", opts: ["Job security", "A heavier checking burden", "Losing the learning route", "Unfair access to good work"] },
+                    { id: "re", q: "My response", opts: ["A short written AI talent promise", "Reassure verbally", "Wait and see"], best: 0 },
+                ] },
+        ] },
+    { n: 5, part: 2, title: "Keep your judgment in the driving seat", goal: "Separate facts from suggestions and know when to escalate.",
+        actions: [
+            { id: "5a", title: "Do it yourself: untangle one recommendation", ref: "Separate what is known from what is suggested",
+                qs: [
+                    { id: "fa", q: "Facts checked against the source", opts: ["All", "Some", "None"], best: 0 },
+                    { id: "as", q: "Assumptions with a named person confirming", opts: ["All", "Some", "None"], best: 0 },
+                    { id: "in", q: "Interpretations supported by the evidence", opts: ["All", "Some", "None"], best: 0 },
+                    { id: "al", q: "Options compared on equal terms", opts: ["Yes", "Not yet"], best: 0 },
+                ] },
+            { id: "5b", title: "Ask for disagreement with a purpose", ref: "Ask for disagreement with a purpose",
+                qs: [
+                    { id: "p", q: "Your challenge to the tool was…", opts: ["Specific: assumptions that could change the decision", "Generic: “challenge my thinking”"], best: 0 },
+                    YES("w", "I asked what would have to be true for another option to win"),
+                    { id: "m", q: "Missing information and contradictions are…", opts: ["Kept separate", "Mixed together"], best: 0 },
+                ] },
+            { id: "5c", title: "Use confidence carefully", ref: "Use confidence carefully",
+                qs: [
+                    { id: "j", q: "I judge reliability by…", opts: ["Observed test results", "The tool’s stated confidence", "How fluent it sounds"], best: 0 },
+                    YES("f", "I looked inside the failures, not just the overall percentage"),
+                    YES("r", "I know whether the reviewer would catch each failure type"),
+                ] },
+            { id: "5d", title: "Set your escalation rule", ref: "Choose the response to uncertainty",
+                qs: [
+                    { id: "ev", q: "Evidence is missing, so I…", opts: ["Request the missing information", "Proceed anyway", "Ignore it"], best: 0 },
+                    { id: "au", q: "The action is beyond my authority, so I…", opts: ["Escalate to the accountable owner", "Decide quietly"], best: 0 },
+                    { id: "pe", q: "Permissions, not just prompts, limit what the workflow can do", opts: ["Yes", "Not yet"], best: 0 },
+                ] },
+            { id: "5e", title: "Chapter action: your decision record", ref: "Leave a record someone else can understand",
+                qs: [
+                    { id: "d", q: "Decision: one small, reversible choice recorded", opts: ["Yes", "Not yet"], best: 0 },
+                    { id: "e", q: "Evidence: sources identified", opts: ["Yes", "Partly"], best: 0 },
+                    { id: "a", q: "Assumptions listed with owners", opts: ["Yes", "Partly", "No"], best: 0 },
+                    { id: "l", q: "Alternatives considered", opts: ["Two or more", "One", "None"], best: 0 },
+                    { id: "o", q: "Accountable owner named", opts: ["Yes", "No"], best: 0 },
+                    { id: "t", q: "Revisit trigger", opts: ["New data", "A date", "A cost change"] },
+                    YES("c", "A colleague read it without my explanation and could find all three"),
+                ] },
+        ] },
+    { n: 6, part: 2, title: "Lead the human side of the change", goal: "Look at who gains, who carries extra work and who needs support.",
+        actions: [
+            { id: "6a", title: "Do it yourself: the human impact review", ref: "Avoid creating a permanent repair crew",
+                qs: [
+                    { id: "g", q: "Who gains time?", opts: ROLE },
+                    { id: "x", q: "Who receives additional work?", opts: ROLE },
+                    { id: "v", q: "Who gains visibility?", opts: ROLE },
+                    { id: "l", q: "Who may lose a learning opportunity?", opts: ROLE },
+                    { id: "s", q: "Who needs support to participate?", opts: ROLE },
+                    { id: "c", q: "Can someone challenge an output?", opts: ["Yes, easily", "With difficulty", "No"], best: 0 },
+                ] },
+            { id: "6b", title: "Fix one imbalance", ref: "Avoid creating a permanent repair crew",
+                qs: [
+                    { id: "fx", q: "The change you can actually make", opts: ["Backup reviewer and credited time", "Rota of reviewers", "Protected learning time", "Redesign the source template"], best: 0 },
+                    YES("d", "I will discuss it with the people affected"),
+                ] },
+            { id: "6c", title: "A route to competence", ref: "Give people a route to competence",
+                qs: [
+                    { id: "st", q: "Where is your team on the learning cycle?", opts: ["Observe", "Practise on examples", "Compare with an expert", "Supervised real task", "Teaching others"] },
+                    { id: "tm", q: "Protected learning time", opts: ["Scheduled", "Informal", "None"], best: 0 },
+                    { id: "rk", q: "Progress is judged by…", opts: ["Competent participation", "Who seems most enthusiastic"], best: 0 },
+                ] },
+            { id: "6d", title: "Keep consequential decisions accountable", ref: "Keep consequential decisions accountable",
+                qs: [
+                    { id: "u", q: "Does AI feed decisions about people (hiring, appraisal, allocation)?", opts: ["No", "Yes: as a summary", "Yes: as a ranking"] },
+                    YES("e", "The human reviewer has the evidence, authority and time to decide independently"),
+                    YES("m", "We check for unrecorded contributions and easily measured bias"),
+                ] },
+            { id: "6e", title: "Chapter action: ask one recipient", ref: "Remember who uses the result",
+                qs: [
+                    { id: "a", q: "I asked: “When this is confusing or wrong, can you get help easily?”", opts: ["Yes", "Not yet"], best: 0 },
+                    { id: "r", q: "The answer was…", opts: ["Easy to get help", "Hard to get help", "Not asked yet"] },
+                    { id: "i", q: "Improvement before adding more automation", opts: ["Human handoff", "Report-an-error route", "Clearer wording", "None needed"] },
+                ] },
+        ] },
+    { n: 7, part: 3, title: "Choose what deserves your effort", goal: "Write a charter and screen ideas on value, feasibility, risk and adoption.",
+        actions: [
+            { id: "7a", title: "Write your three-sentence charter", ref: "Write the three-sentence charter", ws: 7,
+                qs: [
+                    { id: "me", q: "The measure that should move", opts: ["Time per task", "Error or rework rate", "Cost", "Risk exposure", "Customer outcome"] },
+                    { id: "ba", q: "Baseline", opts: ["Measured", "Estimated", "Unknown"], best: 0 },
+                    { id: "ow", q: "Named business owner", opts: ["Yes, a person", "To be decided"], best: 0 },
+                    { id: "li", q: "Scale limit written (users, quality, adoption, risk)", opts: ["Yes", "Not yet"], best: 0 },
+                    { id: "sp", q: "Stop rule", opts: ["Written threshold and date", "We will see", "None"], best: 0 },
+                ] },
+            { id: "7b", title: "Screen an idea", ref: "Fund fewer ideas, and fund them properly",
+                qs: [
+                    { id: "va", q: "Value: can you state it against a baseline within 90 days?", opts: ["Yes", "Not yet"], best: 0 },
+                    { id: "fe", q: "Feasibility: data, permission, process and skills ready?", opts: ["All ready", "Partly", "Not ready"], best: 0 },
+                    { id: "ri", q: "Risk if wrong", opts: ["Low", "Medium", "High"] },
+                    { id: "ad", q: "Adoption: have users helped shape it?", opts: ["Yes", "Not yet"], best: 0 },
+                ],
+                verdict: (a) => {
+                    if (a.va === 1 || a.fe === 2)
+                        return { t: "Stop or redirect", c: C.coral, d: "No clear value or not feasible. Free the effort for a stronger idea." };
+                    if (a.fe === 1 || a.ad === 1 || a.ri === 2)
+                        return { t: "Strengthen first", c: C.amber, d: "Valuable, but fix data, adoption or controls before launch." };
+                    return { t: "Prioritise", c: C.teal, d: "Valuable, feasible and manageable. Fund it end to end." };
+                } },
+            { id: "7c", title: "Five questions for every decision", ref: "Five questions for every decision", ws: 8,
+                qs: [
+                    { id: "v", q: "Strategic value: a business measure moves", opts: ["Pass", "Strengthen", "Stop"] },
+                    { id: "e", q: "Execution readiness: data, process, integration", opts: ["Pass", "Strengthen", "Stop"] },
+                    { id: "g", q: "Governance design: owner and controls fit the impact", opts: ["Pass", "Strengthen", "Stop"] },
+                    { id: "w", q: "Workforce adoption: roles changed with users’ input", opts: ["Pass", "Strengthen", "Stop"] },
+                    { id: "m", q: "Model quality: threshold, test set, drift watch", opts: ["Pass", "Strengthen", "Stop"] },
+                ],
+                verdict: (a) => Object.values(a).includes(2) ? { t: "Stop or redirect", c: C.coral, d: "At least one dimension fails." }
+                    : Object.values(a).includes(1) ? { t: "Strengthen first", c: C.amber, d: "Fix the weak dimensions, then ask again." }
+                        : { t: "Ready for the next gate", c: C.teal, d: "All five pass." } },
+            { id: "7d", title: "Spot the patterns in your portfolio", ref: "Seven patterns to catch in your own portfolio",
+                qs: [
+                    { id: "p", q: "The pattern most active in your work", opts: ["Technology-led, not business-led", "Vague success criteria", "Big-bang deployment", "Change management as an afterthought", "Data discovered mid-project", "Governance vacuum", "Sponsor fades after launch"] },
+                    { id: "f", q: "The manager’s fix to apply first", opts: ["No charter, no budget", "A written baseline and stop rule", "Prove in one place first", "Co-design with users", "Cost the data work", "Controls in proportion to impact", "Name an operating owner"] },
+                ] },
+            { id: "7e", title: "Chapter action: charter, score, ask", ref: "Seven patterns to catch in your own portfolio",
+                qs: [
+                    YES("c", "I wrote a charter for one idea"), YES("s", "I scored three competing ideas on value, feasibility, risk and adoption"),
+                    YES("a", "I asked a colleague which pattern they recognise in our work"),
+                ] },
+        ] },
+    { n: 8, part: 3, title: "Help AI understand your business", goal: "Check data readiness and prepare a source pack someone can trust.",
+        actions: [
+            { id: "8a", title: "Data readiness check", ref: "Data readiness is a business decision",
+                qs: [
+                    YN3("av", "Availability: can the workflow reach the data?"), YN3("qu", "Quality: accurate, complete, current?"),
+                    YN3("pe", "Permission: do you have the right to use it?"), YN3("pr", "Process maturity: can work act on the output?"),
+                    YN3("in", "Integration: can it connect to your systems?"),
+                ],
+                verdict: (a) => Object.values(a).includes(2) ? { t: "Not fundable yet", c: C.coral, d: "If the data work is not funded, the AI work is not funded. Fix the red items first." }
+                    : Object.values(a).includes(1) ? { t: "Fundable with data work costed", c: C.amber, d: "Cost and own the partial items in the business case." }
+                        : { t: "Data-ready", c: C.teal, d: "Proceed, and keep the checks current." } },
+            { id: "8b", title: "Where is your organisation on the digital journey?", ref: "Where is your organisation on the digital journey?",
+                qs: [
+                    { id: "s", q: "Closest to…", opts: ["Mostly manual", "Fragmented systems and data", "Partly modernised", "Digital foundation in place"] },
+                    { id: "f", q: "Your first move", opts: ["Digitise one process first", "Use AI to finish the foundations", "Start in the unit with the cleanest data", "Apply AI to existing data with phase gates"] },
+                    YES("t", "I have budgeted realistic data-preparation time"),
+                ] },
+            { id: "8c", title: "Do it yourself: prepare your source pack", ref: "Build a source pack",
+                qs: [
+                    { id: "n", q: "Number of sources", opts: ["1–2", "3–5", "More than 5"], best: 1 },
+                    YES("o", "Each source has an owner"), { id: "s", q: "Each source’s status is known", opts: ["Approved", "Some drafts", "Unknown"], best: 0 },
+                    YES("d", "Effective dates and scope are recorded"), YES("p", "Permission to use is confirmed"), YES("r", "A review trigger is defined"),
+                ] },
+            { id: "8d", title: "Chapter action: one question, five sources", ref: "Your knowledge maintenance agreement",
+                qs: [
+                    YES("q", "I chose one recurring question my team asks"), YES("c", "I identified one conflict between sources"),
+                    YES("m", "I identified one missing explanation"), YES("p", "I named one person who can resolve them"),
+                    YES("k", "Someone owns keeping the source pack current"),
+                ] },
+        ] },
+    { n: 9, part: 3, title: "Delegate to AI without losing control", goal: "Set authority limits and match controls to consequence.",
+        actions: [
+            { id: "9a", title: "Set the authority level", ref: "Think in terms of authority",
+                qs: [
+                    { id: "lv", q: "What may the agent do first?", opts: ["Read approved information", "Draft for review", "Propose changes", "Act on its own"], best: 1 },
+                    { id: "ap", q: "What needs a human decision?", opts: ["Anything sent outside", "Anything that changes a record", "Both", "Nothing"], best: 2 },
+                    { id: "pz", q: "Who can pause it, and how?", opts: ["Named person with a switch", "Not defined"], best: 0 },
+                ] },
+            { id: "9b", title: "Find your governance tier", ref: "Match controls to consequence",
+                qs: [
+                    { id: "a", q: "If wrong and unnoticed, who is affected?", opts: ["An internal draft a person reviews", "A customer, employee or operational decision", "Credit, clinical, safety or legal outcomes"] },
+                    { id: "b", q: "How reversible is the action?", opts: ["Easily reversed", "Costly to reverse", "Irreversible"] },
+                    { id: "c", q: "What data is involved?", opts: ["No personal data", "Some personal data", "Regulated or sensitive data at scale"] },
+                ],
+                verdict: (a) => { const T = TIERS[Math.max(a.a, a.b, a.c)]; return { t: T.t, c: T.c, d: `${T.d} Controls: ${T.ctl.join("; ")}.` }; } },
+            { id: "9c", title: "Name the five roles", ref: "Match controls to consequence",
+                qs: [
+                    YES("1", "Executive sponsor: owns value and risk appetite"), YES("2", "Business owner: owns the outcome and the handoff"),
+                    YES("3", "Technology and data: security and monitoring"), YES("4", "Risk, legal and compliance: co-designers from day one"),
+                    YES("5", "People and HR: roles and upskilling"),
+                ] },
+            { id: "9d", title: "Do it yourself: the agent task card", ref: "Write the agent’s job description", ws: 3,
+                qs: [
+                    { id: "p", q: "Purpose", opts: ["Identify missing weekly updates", "Draft reminders", "Compile the report"] },
+                    { id: "t", q: "Tools", opts: ["Read-only workspace", "Email drafts", "Records write access"], best: 0 },
+                    { id: "al", q: "Allowed actions", opts: ["Read", "Read and draft", "Read, draft and propose"] },
+                    { id: "ap", q: "Approval points", opts: ["All external actions", "Any record change", "Both"], best: 2 },
+                    { id: "li", q: "Limits", opts: ["No sending", "No deletion", "No commitments"] },
+                    { id: "fa", q: "Failure response", opts: ["Flag it and route to the owner", "Retry silently", "Stop everything"], best: 0 },
+                    YES("te", "Someone unfamiliar read it and described the same authority"),
+                ] },
+            { id: "9e", title: "Chapter action: the smallest useful role", ref: "Expand one responsibility at a time",
+                qs: [
+                    { id: "m", q: "Most consequential action available to the agent", opts: ["None", "Send a message", "Change a record", "Publish a report"], best: 0 },
+                    YES("r", "I removed unnecessary authority before the first test"),
+                    YES("f", "A manual fallback is ready"),
+                ] },
+        ] },
+    { n: 10, part: 3, title: "Turn a useful pilot into a dependable service", goal: "Scale through evidence gates with owners, monitoring and a fallback.",
+        actions: [
+            { id: "10a", title: "Examine the differences", ref: "Examine the differences",
+                qs: ["Inputs", "Users", "Decisions", "Operations", "Integration", "Ownership"].map((s) => ({ id: s, q: `${s}: compared with the pilot setting…`, opts: ["Same", "Different: retest", "Unknown"] })) },
+            { id: "10b", title: "Pick your gate", ref: "Scale through five gates",
+                qs: [
+                    { id: "ga", q: "Where is the pilot now?", opts: ["0 Frame", "1 Prove (10–20% of users)", "2 Validate (20–30%)", "3 Productionise", "4 Scale"] },
+                    { id: "nx", q: "Evidence for the next gate", opts: ["Written and met", "Partly", "None"], best: 0 },
+                    { id: "sk", q: "Skipped any gate?", opts: ["No", "Yes"], best: 0 },
+                ] },
+            { id: "10c", title: "Cost the whole service", ref: "Measure costs that do not appear in the demo",
+                qs: [
+                    { id: "g", q: "Gross effort avoided per month", opts: ["10 h", "20 h", "30 h", "40 h"] },
+                    { id: "r", q: "Additional review", opts: ["2 h", "5 h", "8 h"] },
+                    { id: "m", q: "Source maintenance", opts: ["1 h", "3 h", "5 h"] },
+                    { id: "s", q: "Support and exceptions", opts: ["1 h", "2 h", "4 h"] },
+                ],
+                verdict: (a) => {
+                    const net = [10, 20, 30, 40][a.g] - [2, 5, 8][a.r] - [1, 3, 5][a.m] - [1, 2, 4][a.s];
+                    return { t: `${net} hours of net capacity a month`, c: net > 0 ? C.teal : C.coral, d: "Use the net figure in the business case. Setup, tool charges and technical costs are separate, and released hours are not cash." };
+                } },
+            { id: "10d", title: "Expansion readiness review", ref: "Define readiness in terms of evidence",
+                qs: [
+                    YN3("us", "Useful: does the recipient value it?"), YN3("re", "Reliable enough: cases and failures examined?"),
+                    YN3("op", "Operable: can you detect problems and recover?"), YN3("ow", "Owned: roles and funding clear?"), YN3("pe", "Permitted: fits organisational requirements?"),
+                ] },
+            { id: "10e", title: "Ten questions for every steering review", ref: "Ten questions for every steering review",
+                qs: ["Outcome and baseline defined", "Improvement can be attributed to the AI", "Highest-consequence failure modes known", "Data quality and legal right confirmed", "Where a human stays accountable is clear",
+                    "Accuracy and unacceptable errors monitored live", "Contingency if model or vendor is unavailable", "Drift and misuse detection has an owner", "Users helped design the workflow changes", "Evidence triggers scale, redesign or stop"]
+                    .map((t, i) => YES(`q${i}`, t)),
+                verdict: (a) => {
+                    const n = Object.values(a).filter((v) => v === 0).length;
+                    return { t: `${n}/10 answered with evidence`, c: n >= 9 ? C.teal : n >= 6 ? C.amber : C.coral, d: n >= 9 ? "Ready for the steering review." : "Close the gaps before you ask for more users or funding." };
+                } },
+            { id: "10f", title: "Chapter action: one-page expansion proposal", ref: "Keep a route back",
+                qs: [
+                    YES("p", "Problem and intended users"), YES("e", "Evidence from the pilot"), YES("d", "Differences in the next setting"),
+                    YES("c", "Full recurring effort and costs"), YES("o", "Ownership and support"), YES("s", "Stopping and fallback arrangements"), YES("n", "The decision I need"),
+                ] },
+        ] },
+    { n: 11, part: 4, title: "Four industries, one discipline", goal: "Borrow the pattern from the sector closest to yours.",
+        actions: [
+            { id: "11a", title: "Your sector’s pattern", ref: "Side by side",
+                qs: [
+                    { id: "pt", q: "Pattern to copy", opts: ["One rule: owner, baseline, gate", "Prove it in one place first", "Invest in people and process", "Co-design with the experts"] },
+                    { id: "tp", q: "Trap to avoid", opts: ["Measuring activity, not outcomes", "Big-bang rollout", "Testing only in demo conditions", "Data that does not generalise"] },
+                    { id: "ti", q: "Your highest-impact use (needs strictest controls)", opts: ["Credit or lending decisions", "Stop-line or safety decisions", "Prices shown to customers", "Diagnosis or triage", "Something else"] },
+                ] },
+            { id: "11b", title: "Chapter action: write your field note", ref: "Do it yourself: write your field note",
+                qs: [
+                    { id: "dc", q: "The decision that would unlock value in my area", opts: ["Name the owner before the budget", "Start with one plant or team", "Budget most effort for people and process", "Involve users in design first"] },
+                    { id: "sb", q: "The setback I most want to avoid", opts: ["Wrong scorecard", "Big-bang rollout", "Demo-only validation", "Expertise bolted on late"] },
+                    { id: "ch", q: "My co-design champion", opts: ["A frontline expert is named", "Not yet identified"], best: 0 },
+                ] },
+        ] },
+    { n: 12, part: 5, title: "Make your progress visible", goal: "Keep evidence you can defend and label results honestly.",
+        actions: [
+            { id: "12a", title: "Build your evidence portfolio", ref: "Build a portfolio of evidence",
+                qs: ["Original process and baseline", "Revised workflow", "Test cases and error log", "Before-and-after measures", "Instructions another person can use", "Feedback from the recipient"].map((t, i) => YES(`p${i}`, t)) },
+            { id: "12b", title: "Label a result you can defend", ref: "Measure a result you can defend",
+                qs: [
+                    { id: "lb", q: "Your main claim is…", opts: ["Observed", "Estimated", "Unknown"] },
+                    YES("dc", "Setup and support effort disclosed"),
+                    YES("nx", "Next test written down"),
+                ] },
+            { id: "12c", title: "Do it yourself: your two-minute story", ref: "Describe your contribution in human terms",
+                qs: [
+                    { id: "s", q: "Situation", opts: ["Drafted", "Outlined", "Not started"] }, { id: "w", q: "My work", opts: ["Drafted", "Outlined", "Not started"] },
+                    { id: "r", q: "Result", opts: ["Drafted", "Outlined", "Not started"] }, { id: "l", q: "Learning", opts: ["Drafted", "Outlined", "Not started"] },
+                    YES("c", "Each “we” has my own contribution made clear"),
+                ] },
+            { id: "12d", title: "The handover test", ref: "Become useful beyond your own desk",
+                qs: [YES("r", "A colleague ran the workflow"), YES("h", "I noted where they hesitated"), YES("u", "I updated the instructions")] },
+            { id: "12e", title: "Your next ninety days and introduction", ref: "Your next ninety days", ws: 5,
+                qs: [
+                    { id: "ph", q: "Where are you in the ninety days?", opts: ["Days 1–30: one bounded experiment", "Days 31–60: improve and teach", "Days 61–90: propose an extension"] },
+                    { id: "in", q: "My professional introduction is…", opts: ["Specific about people, outcome and evidence", "Still generic"], best: 0 },
+                    { id: "nx", q: "Next opportunity I will ask for", opts: ["Improve a recurring decision", "Help another team adopt it", "Teach evaluation skills", "Measure an AI initiative"] },
+                ] },
+            { id: "12f", title: "Chapter action: this week", ref: "Rewrite your professional introduction",
+                qs: [YES("e", "I created my first portfolio entry"), YES("s", "I wrote my two-minute story"), YES("c", "I arranged a conversation about a next assignment"), YES("b", "I will bring the evidence")] },
+        ] },
+    { n: 13, part: 5, title: "Build influence around a useful problem", goal: "Make a request someone can answer, with sponsors who actually help.",
+        actions: [
+            { id: "13a", title: "Map the people around the problem", ref: "Map the people around the problem",
+                qs: [YES("s", "Business sponsor named"), YES("p", "Process owner named"), YES("u", "Users involved"), YES("x", "Specialists identified"), YES("a", "Accountable approver identified")] },
+            { id: "13b", title: "Check your sponsor", ref: "Map the people around the problem",
+                qs: [
+                    { id: "sp", q: "Your sponsor is…", opts: ["Active: gives access and decisions", "Nominal: likes the idea", "None yet"], best: 0 },
+                    { id: "ow", q: "Can you name the owner and stop criteria?", opts: ["Both", "One", "Neither"], best: 0 },
+                ] },
+            { id: "13c", title: "Do it yourself: your proposal in six sentences", ref: "Present the problem before the technology",
+                qs: [
+                    { id: "pr", q: "Recurring problem described in business terms", opts: ["Yes", "Led with technology"], best: 0 },
+                    { id: "ev", q: "Current evidence", opts: ["Measured", "Anecdote", "None"], best: 0 },
+                    { id: "te", q: "What I propose to test", opts: ["One bounded change", "Several things", "Not defined"], best: 0 },
+                    { id: "ju", q: "We will judge it using", opts: ["A named measure", "General feel"], best: 0 },
+                    { id: "ne", q: "I need…", opts: ["Hours from named people", "A decision", "General support"], best: 0 },
+                    YES("dt", "…by a stated date"),
+                ] },
+            { id: "13d", title: "Share credit accurately", ref: "Share credit accurately",
+                qs: [YES("n", "I name others’ contributions"), YES("m", "I state my own contribution clearly")] },
+            { id: "13e", title: "Chapter action: the cross-team conversation", ref: "Make a request someone can answer",
+                qs: [
+                    YES("a", "I arranged one conversation across a team boundary"), YES("b", "I brought the six-sentence proposal"),
+                    { id: "o", q: "I left with…", opts: ["A specific next step", "A clear reason not to proceed yet", "Not held yet"] },
+                ] },
+        ] },
+    { n: 14, part: 5, title: "Keep building your next career", goal: "Set a direction, a rhythm and a ninety-day plan.",
+        actions: [
+            { id: "14a", title: "Use four career questions", ref: "Use four career questions",
+                qs: ["What can I understand?", "What can I improve?", "What can I teach?", "What can I take responsibility for?"].map((t, i) => ({ id: `c${i}`, q: t, opts: ["Strong", "Developing", "Not yet"] })) },
+            { id: "14b", title: "Build a manageable rhythm", ref: "Build a manageable rhythm",
+                qs: [YES("w", "Weekly: one task or mistake examined is scheduled"), YES("m", "Monthly: one experiment review is scheduled"), YES("q", "Quarterly: portfolio and direction review is scheduled"), YES("a", "Annually: a career decision review is scheduled")] },
+            { id: "14c", title: "Write your career compass", ref: "Write your career compass", ws: 6,
+                qs: [
+                    { id: "hp", q: "Help…", opts: ["Teams make safer decisions", "Customers get better service", "Organisations modernise", "People build skills"] },
+                    { id: "cp", q: "Capability to build", opts: ["Verifying AI output", "Designing workflows", "Governing risk", "Teaching others"] },
+                    { id: "pr", q: "Practise through", opts: ["A current recurring task", "A cross-team problem", "Teaching a colleague"] },
+                    { id: "sd", q: "Something to stop doing", opts: ["A report nobody uses", "Meetings without purpose", "Comparing tools without a task"] },
+                ] },
+            { id: "14d", title: "Your ninety-day team playbook", ref: "A ninety-day playbook for your team",
+                qs: [
+                    { id: "p1", q: "Days 0–30", opts: ["Inventory and classify initiatives; name owners", "Run one bounded experiment"] },
+                    { id: "p2", q: "Days 31–60", opts: ["Controlled pilots and at least one stop decision", "Teach a colleague"] },
+                    { id: "p3", q: "Days 61–90", opts: ["Productionise only what passed", "Propose one extension"] },
+                    YES("s", "I scored my eight-point leadership scorecard (in Measure)"),
+                ] },
+            { id: "14e", title: "Chapter action: your final exercise", ref: "Your final exercise", ws: 5,
+                qs: [
+                    { id: "o", q: "What I originally thought the task required", opts: ["Mostly typing", "Mostly judgment", "A mix"] },
+                    { id: "d", q: "What I discovered", opts: ["The checking is the real work", "Inputs were the problem", "Ownership was unclear", "It just worked"] },
+                    { id: "a", q: "What AI helped with", opts: ["Drafting", "Extraction", "Comparison", "Nothing yet"] },
+                    { id: "h", q: "What required human judgment", opts: ["Commitments", "Risks", "Priorities", "Relationships"] },
+                    { id: "t", q: "What I can now teach", opts: ["Writing a task brief", "Testing a workflow", "Reviewing output", "Setting limits"] },
+                    { id: "n", q: "What I will do next", opts: ["Test a second setting", "Teach a colleague", "Stop one experiment", "Propose an extension"] },
+                ] },
+        ] },
+];
+// Combine the book's many small exercises into a few focused ones per chapter (the book keeps the full set).
+const MERGE = {
+    1: [{ title: "Choose your first task", ref: "Your task map and selection check", from: [["1b", ["t", "g"]], ["1c", "*"]] },
+        { title: "Define the benefit and your one-page brief", ref: "Your one-page brief", ws: 1, from: [["1d", ["w", "a"]], ["1e", ["p", "r", "m", "b"]]] }],
+    2: [{ title: "Capture your judgment", ref: "Your experience inventory and judgment card", ws: 2, from: [["2b", ["d", "j"]], ["2d", ["tr", "ac", "ex"]]] },
+        { title: "Write the task brief and your value statement", ref: "Teach the tool what good looks like", from: [["2c", ["au", "so", "mi", "na"]], ["2f", ["h", "r", "e"]]] }],
+    3: [{ title: "Run and test your workflow", ref: "Run a miniature experiment; test what can go wrong", from: [["3c", "*"], ["3d", ["aw", "st"]]] },
+        { title: "Decide and plan your 30 days", ref: "Your decision and your pilot card", from: [["3e", ["ev", "er", "de"]], ["3f", ["cp", "sp", "dd"]]] }],
+    4: [{ title: "Agree review and the team agreement", ref: "The reviewer’s job; the team agreement", from: [["4a", ["rv", "cr", "ac"]], ["4d", ["1", "3", "4", "6"]]] },
+        { title: "Answer the concerns and build capability", ref: "Four ways to build capability; the twenty-minute discussion", from: [["4b", ["h", "i"]], ["4c", ["b", "o"]], ["4e", ["co", "re"]]] }],
+    5: [{ title: "Check a recommendation", ref: "Untangle one recommendation", from: [["5a", "*"], ["5b", ["p", "w"]]] },
+        { title: "Set your rules and record the decision", ref: "Confidence, escalation and the decision record", from: [["5c", ["j", "f"]], ["5d", ["ev", "au", "pe"]], ["5e", ["o", "t"]]] }],
+    6: [{ title: "Human impact review", ref: "The human impact review", from: [["6a", "*"], ["6b", ["fx"]]] },
+        { title: "Support people and keep decisions accountable", ref: "A route to competence; accountable decisions", from: [["6c", ["st", "tm"]], ["6d", ["u", "e"]], ["6e", ["a", "r"]]] }],
+    7: [{ title: "Write your three-sentence charter", ref: "The use-case charter", ws: 7, from: [["7a", "*"]] },
+        { title: "Screen an idea and spot the patterns", ref: "Fund fewer ideas; seven patterns", from: [["7b", "*"], ["7d", ["p"]]] },
+        { title: "Run the five-question review", ref: "Five questions for every decision", ws: 8, from: [["7c", "*"], ["7e", ["c", "a"]]] }],
+    8: [{ title: "Check data readiness", ref: "Data readiness is a business decision", from: [["8a", "*"], ["8b", ["s"]]] },
+        { title: "Prepare your source pack", ref: "Build a source pack", from: [["8c", ["o", "s", "p", "r"]], ["8d", ["c", "k"]]] }],
+    9: [{ title: "Set authority and failure plans", ref: "Think in terms of authority; plan for ordinary failure", from: [["9a", "*"], ["9e", ["m", "f"]]] },
+        { title: "Find your tier and name the roles", ref: "Match controls to consequence", from: [["9b", "*"], ["9c", ["1", "2"]]] },
+        { title: "Write the agent task card", ref: "Write the agent’s job description", ws: 3, from: [["9d", ["p", "t", "al", "ap", "fa", "te"]]] }],
+    10: [{ title: "Pick your gate and compare settings", ref: "Scale through five gates", from: [["10b", "*"], ["10a", ["Inputs", "Users", "Decisions"]]] },
+        { title: "Cost the service and check readiness", ref: "Measure costs; define readiness", from: [["10c", "*"], ["10d", ["us", "re"]]] },
+        { title: "Ten steering questions", ref: "Ten questions for every steering review", from: [["10e", "*"]] }],
+    11: [{ title: "Write your field note", ref: "Side by side; write your field note", from: [["11a", "*"], ["11b", "*"]] }],
+    12: [{ title: "Build your evidence portfolio", ref: "Build a portfolio of evidence; label a result", from: [["12a", ["p0", "p2", "p3", "p4"]], ["12b", ["lb", "dc"]]] },
+        { title: "Tell your story and plan the next step", ref: "Your two-minute story; your next ninety days", ws: 5, from: [["12c", ["s", "r", "l"]], ["12e", ["ph", "in", "nx"]]] }],
+    13: [{ title: "Map your people and check your sponsor", ref: "Map the people around the problem", from: [["13a", ["s", "p", "a"]], ["13b", ["sp", "ow"]]] },
+        { title: "Shape your request", ref: "Make a request someone can answer", from: [["13c", ["pr", "ev", "ju", "ne"]], ["13e", ["a", "o"]]] }],
+    14: [{ title: "Set your compass and rhythm", ref: "Write your career compass; build a rhythm", ws: 6, from: [["14c", ["hp", "cp", "sd"]], ["14b", ["w", "m", "q"]]] },
+        { title: "Plan ninety days and reflect", ref: "A ninety-day playbook; your final exercise", ws: 5, from: [["14d", ["p1", "p2", "p3"]], ["14e", ["d", "h", "n"]]] }],
+};
+CHAPTERS.forEach((c) => {
+    const byId = Object.fromEntries(c.actions.map((a) => [a.id, a]));
+    c.actions = MERGE[c.n].map((g, gi) => {
+        const qs = [];
+        let verdict;
+        g.from.forEach(([aid, pick]) => {
+            const a = byId[aid];
+            (pick === "*" ? a.qs.map((q) => q.id) : pick).forEach((qid) => { const q = a.qs.find((x) => x.id === qid); qs.push({ ...q, id: `${aid}_${qid}` }); });
+            if (a.verdict && pick === "*")
+                verdict = (ans) => a.verdict(Object.fromEntries(a.qs.map((q) => [q.id, ans[`${aid}_${q.id}`]])));
+        });
+        return { id: `${c.n}${"abc"[gi]}`, title: g.title, ref: g.ref, ws: g.ws, qs, verdict };
+    });
+});
+const AI_EX = {
+    "1": {
+        "t": "Sort your week with an assistant",
+        "prompt": [
+            "Here are five recurring activities from my working week, with weekly hours: {{paste your list}}. Sort each into Prepare, Analyse, Decide or Connect. For each, say what information goes in, what output comes out and what happens if it is wrong. Then rank them from safest to riskiest to try with AI assistance, and explain why. Do not recommend automating any decision."
+        ],
+        "checks": [
+            "Do you agree with the grouping? Where did you disagree, and why?",
+            "Did the assistant treat the Decide tasks more cautiously than the Prepare tasks?",
+            "Which task will you choose? The choice is yours, not the assistant’s."
+        ]
+    },
+    "2": {
+        "t": "Turn your judgment into a card with an assistant",
+        "prompt": [
+            "Interview me, one question at a time, to turn a piece of my professional judgment into a short judgment card with four parts: the trigger, the evidence to examine, the action to consider, and an exception that would change my mind. Use only what I tell you. After four questions, draft the card and mark anything you inferred rather than heard from me."
+        ],
+        "checks": [
+            "Does the card contain any rule you did not say? Remove it.",
+            "Test the card on two fictional updates. Does it give the same answer you would?",
+            "Could a colleague use it without you in the room?"
+        ]
+    },
+    "3": {
+        "t": "Run the miniature experiment in Claude",
+        "prompt": [
+            "Using only S1–S3 below, draft a dependency summary of at most 150 words for the programme manager. Include source IDs. Preserve stated dates and uncertainty. Separate facts from questions. Flag dependencies without claiming a confirmed delay. Do not invent dates, defect severity or customer impact. {{paste S1, S2 and S3 from this chapter}}",
+            "Now run the same request again, with the owner removed from S1."
+        ],
+        "checks": [
+            "Compare Claude’s answer with the worked answer above.",
+            "The answer should not claim the launch has slipped, invent defect severity or borrow an owner’s name from another source.",
+            "In the second run, a good answer writes “not provided” for the missing owner.",
+            "Record minutes and errors on Worksheet 09, and run the prompt two or three times to see how much the answers vary."
+        ]
+    },
+    "4": {
+        "t": "Stress-test your team agreement",
+        "prompt": [
+            "Here is my team’s draft AI working agreement: {{paste your seven clauses}}. Act as a sceptical colleague. List the three biggest gaps, who could be disadvantaged, and one question each team member might ask. Do not rewrite the agreement."
+        ],
+        "checks": [
+            "Which of the three gaps is real for your team?",
+            "The assistant does not know your colleagues. Take its questions to the team and let them answer.",
+            "Update the agreement only with changes the team accepts."
+        ]
+    },
+    "5": {
+        "t": "Untangle a recommendation",
+        "prompt": [
+            "Below is a recommendation and its source material. Rewrite the recommendation under four headings: Facts, Assumptions, Interpretations, Recommendation. Then list what would have to be true for the second option to be better, and mark every claim that has no source in the text. {{paste a fictional comparison and recommendation}}"
+        ],
+        "checks": [
+            "Open the source for every item under Facts. Does it say what the assistant says?",
+            "Which assumptions need a named person to confirm them?",
+            "Write the decision record yourself. The assistant’s version is a draft."
+        ]
+    },
+    "6": {
+        "t": "Prepare your human impact review",
+        "prompt": [
+            "Here is a workflow my team has started using: {{describe it}}. List who could gain time, who could receive extra work, who could lose a learning opportunity and who might need support, and give one question to ask each group. Label everything you cannot know about my actual team as a question, not a fact."
+        ],
+        "checks": [
+            "Ask the real people. The assistant knows nothing about your colleagues.",
+            "Did any of its questions reveal an imbalance you had not noticed?",
+            "Agree one change you can make."
+        ]
+    },
+    "7": {
+        "t": "Draft a charter with an assistant",
+        "prompt": [
+            "Draft a three-sentence use-case charter. Problem today: {{describe}}. Baseline: {{your measured number}}. Target: {{your target and date}}. Owner: {{name or role}}. Use only my numbers. For anything I have left blank, write [MISSING] and list the questions I must answer to fill it."
+        ],
+        "checks": [
+            "Did it invent any number? Delete it and go and measure the real one.",
+            "Is every [MISSING] marker something you can answer this week?",
+            "Copy the final version onto Worksheet 07."
+        ]
+    },
+    "8": {
+        "t": "Audit your source pack and test retrieval",
+        "prompt": [
+            "Here are my sources with their status and date: {{paste a table}}. Find conflicts, stale items and anything with unknown status. Then answer this question using only approved, current sources, cite the source ID for each claim, and write “not supported” where the sources do not answer: {{your question}}"
+        ],
+        "checks": [
+            "Open every cited source. Does it support the claim?",
+            "Did the answer use a draft or superseded document as though it were approved?",
+            "Fix the source pack, not just the answer."
+        ]
+    },
+    "9": {
+        "t": "Review an agent task card",
+        "prompt": [
+            "Review this agent task card as a security reviewer. Identify any authority it does not need, any action without an approval point, and what happens if a source cannot be read. {{paste your seven-item task card}}"
+        ],
+        "checks": [
+            "Did the reviewer find authority your agent does not need? Remove it.",
+            "Does every action that sends or changes something have a named approval point?",
+            "What happens when a source cannot be read? Write the answer on the task card.",
+            "Keep the card short enough that someone outside the project can read it in a minute."
+        ]
+    },
+    "10": {
+        "t": "Rehearse the steering review",
+        "prompt": [
+            "Act as a sceptical programme director. Ask me the ten steering questions below one at a time. Challenge any answer that lacks evidence. At the end, list the questions I could not answer with evidence. {{paste the ten questions}}"
+        ],
+        "checks": [
+            "The questions you could not answer are your gaps. Close them before the real review.",
+            "Did the assistant accept any answer you would not accept from a colleague?",
+            "Rehearse out loud once before the meeting."
+        ]
+    },
+    "11": {
+        "t": "Map the pattern to your own sector",
+        "prompt": [
+            "Map these four patterns to my sector, {{your sector}}: name the owner and baseline first, prove it in one place, invest in people and process, and co-design with the experts. Give three good first tasks, one high-impact use that needs strict controls, and one trap to avoid. Do not cite real company examples."
+        ],
+        "checks": [
+            "Assistants can invent plausible case studies. Verify anything specific against a primary source.",
+            "Which of the three first tasks fits a charter from Chapter 7?",
+            "Add the result to your field note."
+        ]
+    },
+    "12": {
+        "t": "Draft your two-minute story",
+        "prompt": [
+            "Using only these notes, write a two-minute story of under 250 words with four parts: situation, my work, result, learning. Label every claim Observed, Estimated or Unknown. Do not add any number I did not give you. {{paste your notes and measurements}}"
+        ],
+        "checks": [
+            "Trace every number back to your own log.",
+            "Is your own contribution clear in every sentence that begins with “we”?",
+            "Keep the labels. They are what make the story defensible."
+        ]
+    },
+    "13": {
+        "t": "Pressure-test your proposal",
+        "prompt": [
+            "Here is my six-sentence proposal: {{paste}}. Tighten it without adding any claim. Then play my programme director and raise the three strongest objections, and suggest a one-line reply to each."
+        ],
+        "checks": [
+            "Can you back each reply with evidence you actually hold?",
+            "Which objection did you not expect? Prepare for it.",
+            "Make the final request specific: named people, hours and a date."
+        ]
+    },
+    "14": {
+        "t": "Run a career review with an assistant as coach",
+        "prompt": [
+            "Act as a career coach. Using my compass statement and evidence list below, ask me five questions, one at a time, about what I can understand, improve, teach and take responsibility for. Then summarise my answers in my own words and suggest one experiment for next quarter. {{paste}}"
+        ],
+        "checks": [
+            "Keep what rings true and discard the rest. You know your situation; the assistant does not.",
+            "Add the experiment to your quarterly review.",
+            "Repeat the exercise each quarter and compare your answers."
+        ]
+    }
+};
+CHAPTERS.forEach((c) => {
+    const x = AI_EX[c.n];
+    c.actions.push({ id: `${c.n}ai`, title: "AI exercise: " + x.t, ref: "AI assistant exercise", ws: 9, ai: true, pid: `c${c.n}`, prompt: x.prompt,
+        qs: [
+            { id: "run", q: "How did you get the prompt?", opts: ["Copied it from the Prompts tab", "Pasted it from the book", "Not yet"] },
+            { id: "data", q: "What did you paste into it?", opts: ["Fictional or anonymised only", "Approved internal information", "Not sure"], best: 0 },
+            ...x.checks.slice(0, 2).map((t, i) => ({ id: `k${i}`, q: t, opts: ["Done", "Not yet"], best: 0 })),
+            { id: "res", q: "How useful was the result?", opts: ["Useful as is", "Useful after my edits", "Not useful"] },
+        ] });
+});
+const STARTER_PROMPTS = [
+    ...CHAPTERS.map((c) => ({ id: `c${c.n}`, group: "From the chapters", title: `Ch ${c.n}: ${AI_EX[c.n].t}`, text: AI_EX[c.n].prompt[0] })),
+    { id: "e1", group: "Everyday", title: "Turn notes into actions", text: "From the meeting notes below, list the decisions made, the actions agreed, each action’s owner and date, and anything unresolved. Use only the notes. Write “not provided” where an owner or date is missing.\n\n{{paste your notes}}" },
+    { id: "e2", group: "Everyday", title: "Draft a status update from notes", text: "Draft a status update of at most 150 words for {{who will read it}} using only the notes below. Separate facts from open questions. Preserve any stated uncertainty and do not invent dates.\n\n{{paste your notes}}" },
+    { id: "e3", group: "Everyday", title: "Check my draft against my sources", text: "Compare the draft with the sources below. List every claim in the draft that the sources do not support, and every important point in the sources that the draft leaves out. Do not rewrite the draft.\n\nDRAFT:\n{{paste your draft}}\n\nSOURCES:\n{{paste your sources}}" },
+    { id: "e4", group: "Everyday", title: "Plain-English explainer", text: "Explain the text below in plain English for someone who does not work in my field. Keep it under 150 words, and list any terms you had to simplify.\n\n{{paste the text}}" },
+    { id: "e5", group: "Everyday", title: "Find the gaps in my plan", text: "Read my plan below. List the five assumptions most likely to be wrong, the information I would need to check each one, and any step that has no named owner.\n\n{{paste your plan}}" },
+    { id: "e6", group: "Everyday", title: "Questions for a hard conversation", text: "I need to talk to {{who, and about what}}. Give me ten open questions to ask, in a sensible order, and three things I should avoid saying. Do not script what they will say." },
+    { id: "e7", group: "Everyday", title: "Write a decision record", text: "Turn my notes into a decision record with these headings: Decision, Evidence, Assumptions, Alternatives, Owner, Revisit trigger. Use only my notes and write “not provided” for anything missing.\n\n{{paste your notes}}" },
+];
+const placeholdersOf = (t) => { const o = []; const re = /\{\{([^}]+)\}\}/g; let m; while ((m = re.exec(t)))
+    if (!o.includes(m[1]))
+        o.push(m[1]); return o; };
+const fillPrompt = (t, v) => t.replace(/\{\{([^}]+)\}\}/g, (_, k) => v[k] || `{{${k}}}`);
+const showPrompt = (t) => t.replace(/\{\{([^}]+)\}\}/g, "[$1]");
+const PARTS = [
+    { n: 1, name: "Start with your work", c: C.teal },
+    { n: 2, name: "Lead people and judgment", c: C.indigo },
+    { n: 3, name: "Build dependable foundations", c: C.amber },
+    { n: 4, name: "Four industries", c: C.coral },
+    { n: 5, name: "Grow your career", c: C.sage },
+];
+const TIPS = {
+    1: { FS: "Priya separates assembling a loan file (prepare) from deciding on an exception (decide).", MF: "Karan starts in shift handover notes, not at the shipping gate.", RC: "Sofia lets AI prepare the markdown comparison but not set the price.", HC: "Grace separates the paperwork from the care." },
+    2: { FS: "Rule: when every proof comes from one document trail, ask for an independent check.", MF: "Three minor cosmetic flags on one line often precede a tooling problem.", RC: "A spike in one size is usually a sizing issue, not demand.", HC: "“The patient is fine” in a referral: which test is outstanding?" },
+    3: { FS: "Test on closed, anonymised files. Any invented figure ends the trial.", MF: "Count supervisors’ checking minutes. A wrong defect count is a safety talk.", RC: "Record how many buyers acted earlier, not just time saved.", HC: "Stop on any invented clinical detail." },
+    4: { FS: "Borrow a model-risk specialist and require that they train two analysts.", MF: "Inspectors co-write the defect vocabulary, then teach it.", RC: "Train store staff before the rollout, not after.", HC: "Name a clinician champion per team." },
+    5: { FS: "Re-test regularly: models drift when rates and circumstances change.", MF: "New material or lighting can change what a defect looks like.", RC: "Check forecasts against live sales weekly.", HC: "Ask for validation on patients like yours." },
+    6: { FS: "Credit the corrections your most experienced underwriter makes.", MF: "State in writing that the tool inspects parts, not people.", RC: "Give store staff protected learning time.", HC: "Keep human assessment in charge of appraisals." },
+    7: { FS: "“Summarise closed files” is prioritise. “Recommend credit” is strengthen first.", MF: "Flag surface defects on one line first. Stop-line control comes later.", RC: "Forecast one category before a chain-wide markdown engine.", HC: "Referral drafts first. Triage suggestions need clinical leadership." },
+    8: { FS: "Data collected for one purpose cannot automatically be reused for another.", MF: "Start in the newest plant, where sensors and records are clean.", RC: "Years of integrated data are why the AI works.", HC: "A short data-standardisation period is the most valuable step." },
+    9: { FS: "Keep document summaries (low) and credit recommendations (high) in separate workflows.", MF: "A tool that can stop a line is high impact: tested manual fallback.", RC: "Prices shown to customers are medium: owner sign-off and logging.", HC: "Anything touching diagnosis or triage is high: a clinician decides." },
+    10: { FS: "Stop criteria must survive scale: an alarm can still switch it off.", MF: "Plant by plant. Workers confirm the defect definitions first.", RC: "Validate in real stores, not the head-office demo.", HC: "Integration with the clinical record must be live before launch." },
+};
+const SCORECARD = [
+    "I can name the business owner of every funded AI initiative.",
+    "Each has a written baseline, target and scale or stop rule.",
+    "Controls are proportionate to impact.",
+    "Data readiness is costed, scoped and owned.",
+    "Users are co-designing, not receiving a finished product.",
+    "We measure adoption, economics and outcomes, not just accuracy.",
+    "We make explicit stop and scale decisions.",
+    "Human accountability for material decisions is documented and tested.",
+];
+const DIMS = [
+    { k: "v", name: "Value", q: "A business measure moves" },
+    { k: "e", name: "Readiness", q: "Data, process and integration are ready" },
+    { k: "g", name: "Governance", q: "Owner and controls fit the impact" },
+    { k: "w", name: "Adoption", q: "Roles changed with users’ input" },
+    { k: "m", name: "Quality", q: "Threshold, test set and drift watch" },
+];
+const TIERS = [
+    { t: "Low impact", c: C.sage, l: C.sageL, d: "Move fast.", ctl: ["Approved tools list", "Basic usage policy", "Light spot-checks", "Incident channel"] },
+    { t: "Medium impact", c: "#C77D14", l: C.amberL, d: "Name an owner.", ctl: ["Named business owner", "Test set with a threshold", "Decision logging", "Human review of exceptions"] },
+    { t: "High impact", c: C.coral, l: C.coralL, d: "AI recommends, a human decides.", ctl: ["Independent validation", "Strict human authority", "Full audit trail", "Contingency and senior sign-off"] },
+];
+/* ------------------------------------------------------------- state & io */
+const KEY = "nextcareer:companion:v1";
+const INITIAL = {
+    sector: null, answers: {}, runs: [], baseline: 90, setup: 120,
+    score: {}, dims: {}, tier: {}, draft: { d: 15, c: 30, e: 0, t: 0 }, days: [], read: {}, prompts: [], history: [], ack: false, name: "", doneOn: null, snap: null,
+};
+function optsOf(q, sector) { return typeof q.opts === "function" ? q.opts(sector || "OT") : q.opts; }
+const allActions = CHAPTERS.flatMap((c) => c.actions.map((a) => ({ ...a, ch: c })));
+function actionDone(a, answers) { return a.qs.every((q) => { var _a; return ((_a = answers[a.id]) === null || _a === void 0 ? void 0 : _a[q.id]) !== undefined; }); }
+const chSteps = (c, st) => { var _a; return ({ done: c.actions.filter((a) => actionDone(a, st.answers)).length + (((_a = st.read) === null || _a === void 0 ? void 0 : _a[c.n]) ? 1 : 0), total: c.actions.length + 1 }); };
+const chComplete = (c, st) => { const x = chSteps(c, st); return x.done === x.total; };
+/* ------------------------------------------------------------------- game */
+const LEVELS = [
+    { at: 0, name: "Starter" }, { at: 10, name: "Task Mapper" }, { at: 25, name: "Workflow Builder" },
+    { at: 40, name: "Judgment Keeper" }, { at: 55, name: "Evidence Builder" }, { at: 70, name: "Change Leader" },
+    { at: 84, name: "Career Architect" },
+];
+const r1 = (n) => Math.round(n * 10) / 10;
+const dkey = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+const touchDay = (s) => { const t = dkey(new Date()); return (s.days || []).includes(t) ? s : { ...s, days: [...(s.days || []).slice(-60), t] }; };
+function streakOf(days) {
+    const set = new Set(days || []);
+    let n = 0;
+    const d = new Date();
+    if (!set.has(dkey(d)))
+        d.setDate(d.getDate() - 1);
+    while (set.has(dkey(d))) {
+        n++;
+        d.setDate(d.getDate() - 1);
+    }
+    return n;
+}
+function chStars(c, st) {
+    const x = chSteps(c, st);
+    const perfect = x.done === x.total && c.actions.every((a) => a.qs.every((q) => { var _a; return q.best === undefined || ((_a = st.answers[a.id]) === null || _a === void 0 ? void 0 : _a[q.id]) === q.best; }));
+    return perfect ? 3 : x.done === x.total ? 2 : x.done > 0 ? 1 : 0;
+}
+function computeGame(st) {
+    const A = st.answers;
+    const done = allActions.filter((a) => actionDone(a, A)).length;
+    let good = 0, graded = 0;
+    allActions.forEach((a) => a.qs.forEach((q) => { var _a; const v = (_a = A[a.id]) === null || _a === void 0 ? void 0 : _a[q.id]; if (q.best !== undefined && v !== undefined) {
+        graded++;
+        if (v === q.best)
+            good++;
+    } }));
+    const partDone = (n) => CHAPTERS.filter((c) => c.part === n).every((c) => chComplete(c, st));
+    const readN = CHAPTERS.filter((c) => { var _a; return (_a = st.read) === null || _a === void 0 ? void 0 : _a[c.n]; }).length;
+    const chDone = CHAPTERS.filter((c) => chComplete(c, st)).length;
+    const stars3 = CHAPTERS.filter((c) => chStars(c, st) === 3).length;
+    const scoreN = Object.values(st.score).filter(Boolean).length;
+    const reviewDone = Object.keys(st.dims).length === 5;
+    const tierDone = ["a", "b", "c"].every((k) => st.tier[k] !== undefined);
+    const streak = streakOf(st.days);
+    const aiDone = allActions.filter((a) => a.ai && actionDone(a, A)).length;
+    const saved = (st.prompts || []).length;
+    const ran = (st.history || []).length;
+    const last3 = st.runs.slice(-3);
+    const ctx = { st, chDone, saved, ran, aiDone, done, good, graded, partDone, scoreN, reviewDone, tierDone, streak, runs: st.runs.length,
+        clean3: last3.length === 3 && last3.every((r) => r.e === 0), match: graded ? good / graded : 0 };
+    // Final score out of 100, identical to the book's tally: 14 reading + 42 core + 28 AI + 16 evidence
+    const readPts = CHAPTERS.reduce((t, c) => { var _a; return t + (((_a = st.read) === null || _a === void 0 ? void 0 : _a[c.n]) ? 1 : 0); }, 0);
+    const corePts = CHAPTERS.reduce((t, c) => { const core = c.actions.filter((a) => !a.ai); return t + (3 * core.filter((a) => actionDone(a, A)).length) / core.length; }, 0);
+    const aiPts = aiDone * 2;
+    const ev = [
+        { l: "Three logged experiment runs", got: (4 * Math.min(st.runs.length, 3)) / 3, max: 4 },
+        { l: "Five-question review", got: reviewDone ? 3 : 0, max: 3 },
+        { l: "Leadership scorecard (½ point each)", got: scoreN * 0.5, max: 4 },
+        { l: "Governance tier found", got: tierDone ? 2 : 0, max: 2 },
+        { l: "Three prompts saved (1 each)", got: Math.min(saved, 3), max: 3 },
+    ].map((x) => ({ ...x, got: r1(x.got) }));
+    const evPts = ev.reduce((t, x) => t + x.got, 0);
+    const items = [
+        { l: "Chapters read", got: r1(readPts), max: 14, c: C.teal }, { l: "Core exercises", got: r1(corePts), max: 42, c: C.indigo },
+        { l: "AI assistant exercises", got: r1(aiPts), max: 28, c: C.amber }, { l: "Evidence bonuses", got: r1(evPts), max: 16, c: C.coral },
+    ];
+    const xp = r1(readPts + corePts + aiPts + evPts);
+    ctx.total = xp;
+    const finalTier = chDone === 14 ? (xp >= 100 ? "Career Architect: Distinction" : xp >= 90 ? "Career Architect: Merit" : "Career Architect") : null;
+    let level = 0;
+    LEVELS.forEach((L, i) => { if (xp >= L.at)
+        level = i; });
+    const cur = LEVELS[level], nxt = LEVELS[level + 1];
+    const levelPct = nxt ? Math.round(((xp - cur.at) / (nxt.at - cur.at)) * 100) : 100;
+    const badges = BADGES.map((b) => { const [have, need] = b.prog(ctx); return { ...b, have: Math.min(have, need), need, earned: have >= need }; });
+    return { xp, done, ev, finalTier, chDone, items, level: level + 1, levelName: cur.name, nextAt: nxt ? nxt.at : null, nextName: nxt ? nxt.name : null, levelPct, streak, badges, stars3 };
+}
+const BADGES = [
+    { id: "first", name: "First step", desc: "Complete your first exercise", icon: Star, prog: (x) => [x.done, 1] },
+    { id: "p1", name: "Task whisperer", desc: "Finish all of Part 1", icon: MapIcon, prog: (x) => [x.partDone(1) ? 1 : 0, 1] },
+    { id: "p2", name: "Team shepherd", desc: "Finish all of Part 2", icon: User, prog: (x) => [x.partDone(2) ? 1 : 0, 1] },
+    { id: "p3", name: "Foundation builder", desc: "Finish all of Part 3", icon: Lock, prog: (x) => [x.partDone(3) ? 1 : 0, 1] },
+    { id: "p4", name: "Field notes", desc: "Finish Part 4", icon: Lightbulb, prog: (x) => [x.partDone(4) ? 1 : 0, 1] },
+    { id: "p5", name: "Career builder", desc: "Finish all of Part 5", icon: Trophy, prog: (x) => [x.partDone(5) ? 1 : 0, 1] },
+    { id: "run1", name: "Baseline setter", desc: "Log your first run", icon: BarChart3, prog: (x) => [x.runs, 1] },
+    { id: "run3", name: "Honest measurer", desc: "Log three runs", icon: BarChart3, prog: (x) => [x.runs, 3] },
+    { id: "clean", name: "Clean sheet", desc: "Three straight runs with zero material errors", icon: Check, prog: (x) => [x.clean3 ? 3 : 0, 3] },
+    { id: "gate", name: "Gatekeeper", desc: "Complete the five-question review", icon: Lock, prog: (x) => [x.reviewDone ? 1 : 0, 1] },
+    { id: "tier", name: "Right-sized controls", desc: "Find your governance tier", icon: Lock, prog: (x) => [x.tierDone ? 1 : 0, 1] },
+    { id: "eight", name: "Eight of eight", desc: "Score 8/8 on the leadership scorecard", icon: Trophy, prog: (x) => [x.scoreN, 8] },
+    { id: "sound", name: "Sound judgment", desc: "80% good-practice match across 10+ graded choices", icon: Lightbulb, prog: (x) => [x.graded >= 10 && x.match >= 0.8 ? 1 : 0, 1] },
+    { id: "s3", name: "Three-day streak", desc: "Practise three days in a row", icon: Flame, prog: (x) => [x.streak, 3] },
+    { id: "s7", name: "Seven-day streak", desc: "Practise seven days in a row", icon: Flame, prog: (x) => [x.streak, 7] },
+    { id: "keeper", name: "Prompt keeper", desc: "Save three prompts to your catalogue", icon: Sparkles, prog: (x) => [x.saved, 3] },
+    { id: "hands", name: "Hands on", desc: "Use three prompts from the app", icon: Sparkles, prog: (x) => [x.ran, 3] },
+    { id: "prompt5", name: "Prompt crafter", desc: "Complete five AI assistant exercises", icon: Star, prog: (x) => [x.aiDone, 5] },
+    { id: "lab", name: "AI lab graduate", desc: "Complete all 14 AI assistant exercises", icon: Trophy, prog: (x) => [x.aiDone, 14] },
+    { id: "dist", name: "Distinction", desc: "Finish the book with a score of 100", icon: Trophy, prog: (x) => [x.total || 0, 100] },
+    { id: "all", name: "Finisher", desc: "Complete all 14 chapters", icon: Trophy, prog: (x) => [x.chDone, 14] },
+];
+const CONFETTI_CSS = `
+@keyframes ncFall { 0% { transform: translateY(-20px) rotate(0deg); opacity: 1; } 100% { transform: translateY(520px) rotate(540deg); opacity: 0; } }
+@keyframes ncSlide { 0% { transform: translateY(-16px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .nc-conf { display: none; } .nc-toast { animation: none !important; } }
+`;
+function Confetti() {
+    const pieces = useMemo(() => Array.from({ length: 34 }, (_, i) => ({
+        l: Math.round(Math.random() * 100), d: (Math.random() * 0.6).toFixed(2), t: (1.6 + Math.random() * 1.2).toFixed(2),
+        c: [C.teal, C.amber, C.coral, C.indigo, C.sage][i % 5], w: 6 + Math.round(Math.random() * 6),
+    })), []);
+    return (React.createElement("div", { className: "nc-conf absolute left-0 right-0 top-0 overflow-hidden pointer-events-none", style: { height: 560, zIndex: 40 }, "aria-hidden": "true" }, pieces.map((p, i) => (React.createElement("span", { key: i, style: { position: "absolute", left: `${p.l}%`, top: 0, width: p.w, height: p.w * 1.6, background: p.c, borderRadius: 2, animation: `ncFall ${p.t}s ${p.d}s ease-in forwards` } })))));
+}
+function StarRow({ n, size = 14, light }) {
+    return (React.createElement("span", { className: "inline-flex gap-0.5", "aria-label": `${n} of 3 stars` }, [0, 1, 2].map((i) => React.createElement(Star, { key: i, size: size, fill: i < n ? C.amber : "none", color: i < n ? C.amber : light ? "rgba(255,255,255,.6)" : C.line, strokeWidth: 2 }))));
+}
+/* ---- charts (inline SVG, no libraries) ---- */
+function ChartLegend({ items }) {
+    return React.createElement("div", { className: "flex flex-wrap gap-3 mt-1", style: { fontSize: 11, color: C.slate } }, items.map((i) => React.createElement("span", { key: i[0], className: "inline-flex items-center gap-1" },
+        React.createElement("span", { style: { width: 10, height: 10, borderRadius: 2, background: i[1], display: "inline-block" } }),
+        i[0])));
+}
+function BarsChart({ data, h = 150 }) {
+    const W = 360, L = 32, R = 8, T = 22, B = 26, iw = W - L - R, ih = h - T - B, n = Math.max(data.length, 1), bw = Math.min(40, (iw / n) * 0.6);
+    const y = (v) => T + ih - (v / 100) * ih;
+    return (React.createElement("svg", { viewBox: `0 0 ${W} ${h}`, width: "100%", role: "img", "aria-label": "Progress by part" },
+        [0, 50, 100].map((t) => React.createElement("g", { key: t },
+            React.createElement("line", { x1: L, x2: W - R, y1: y(t), y2: y(t), stroke: C.mist }),
+            React.createElement("text", { x: L - 6, y: y(t) + 4, fontSize: "11", fill: C.slate, textAnchor: "end" }, t))),
+        data.map((d, i) => {
+            const cx = L + ((i + 0.5) * iw) / n;
+            return (React.createElement("g", { key: d.name },
+                React.createElement("rect", { x: cx - bw / 2, y: y(d.pct), width: bw, height: Math.max(0, T + ih - y(d.pct)), rx: "5", fill: d.c }),
+                React.createElement("text", { x: cx, y: y(d.pct) - 4, fontSize: "11", fill: C.navy, textAnchor: "middle", fontWeight: "700" },
+                    d.pct,
+                    "%"),
+                React.createElement("text", { x: cx, y: h - 8, fontSize: "11", fill: C.slate, textAnchor: "middle" }, d.name)));
+        })));
+}
+function RadarShape({ data, h = 210, max = 2 }) {
+    const W = 360, cx = W / 2, cy = h / 2 + 4, R = h / 2 - 36, n = data.length;
+    const pt = (i, r) => { const a = -Math.PI / 2 + (i * 2 * Math.PI) / n; return [cx + r * Math.cos(a), cy + r * Math.sin(a)]; };
+    const ring = (f) => data.map((_, i) => pt(i, R * f).join(",")).join(" ");
+    const poly = data.map((d, i) => pt(i, R * (d.v / max)).join(",")).join(" ");
+    return (React.createElement("svg", { viewBox: `0 0 ${W} ${h}`, width: "100%", role: "img", "aria-label": "Initiative health radar chart" },
+        [0.5, 1].map((f) => React.createElement("polygon", { key: f, points: ring(f), fill: "none", stroke: C.line })),
+        data.map((d, i) => { const p = pt(i, R); return React.createElement("line", { key: i, x1: cx, y1: cy, x2: p[0], y2: p[1], stroke: C.line }); }),
+        React.createElement("polygon", { points: poly, fill: C.teal, fillOpacity: "0.3", stroke: C.teal, strokeWidth: "2" }),
+        data.map((d, i) => { const p = pt(i, R + 20); return React.createElement("text", { key: d.dim, x: p[0], y: p[1] + 4, fontSize: "11", fill: C.ink, textAnchor: "middle" }, d.dim); })));
+}
+function StackedRuns({ data, baseline, h = 210 }) {
+    const W = 360, L = 36, R = 8, T = 22, B = 28, iw = W - L - R, ih = h - T - B, n = Math.max(data.length, 1);
+    const mx = Math.ceil(Math.max(baseline * 1.1, ...data.map((d) => d.Draft + d["Check and fix"]), 10) / 10) * 10;
+    const y = (v) => T + ih - (v / mx) * ih, bw = Math.min(38, (iw / n) * 0.6);
+    return (React.createElement("div", null,
+        React.createElement("svg", { viewBox: `0 0 ${W} ${h}`, width: "100%", role: "img", "aria-label": "Minutes per run against the baseline" },
+            [0, 0.5, 1].map((f) => { const v = Math.round(mx * f); return React.createElement("g", { key: f },
+                React.createElement("line", { x1: L, x2: W - R, y1: y(v), y2: y(v), stroke: C.mist }),
+                React.createElement("text", { x: L - 6, y: y(v) + 4, fontSize: "11", fill: C.slate, textAnchor: "end" }, v)); }),
+            data.map((d, i) => {
+                const cx = L + ((i + 0.5) * iw) / n, a = d.Draft, b = d["Check and fix"];
+                return (React.createElement("g", { key: d.name + i },
+                    React.createElement("rect", { x: cx - bw / 2, y: y(a), width: bw, height: Math.max(0, T + ih - y(a)), fill: C.teal }),
+                    React.createElement("rect", { x: cx - bw / 2, y: y(a + b), width: bw, height: Math.max(0, y(a) - y(a + b)), fill: C.amber, rx: "3" }),
+                    React.createElement("text", { x: cx, y: y(a + b) - 4, fontSize: "10", fill: C.navy, textAnchor: "middle", fontWeight: "700" }, a + b),
+                    React.createElement("text", { x: cx, y: h - 10, fontSize: "10", fill: C.slate, textAnchor: "middle" }, d.name)));
+            }),
+            React.createElement("line", { x1: L, x2: W - R, y1: y(baseline), y2: y(baseline), stroke: C.coral, strokeDasharray: "5 4", strokeWidth: "1.5" }),
+            React.createElement("text", { x: W - R, y: y(baseline) - 4, textAnchor: "end", fontSize: "11", fill: C.coral, fontWeight: "700" },
+                "Baseline ",
+                baseline)),
+        React.createElement(ChartLegend, { items: [["Draft", C.teal], ["Check and fix", C.amber]] })));
+}
+function NetLine({ data, h = 180 }) {
+    const W = 360, L = 42, R = 26, T = 14, B = 28, iw = W - L - R, ih = h - T - B, n = data.length;
+    const vals = data.map((d) => d.net), mn = Math.min(0, ...vals), mx = Math.max(0, ...vals), span = mx - mn || 1;
+    const y = (v) => T + ih - ((v - mn) / span) * ih, x = (i) => L + (n === 1 ? iw / 2 : (i * iw) / (n - 1));
+    const pts = data.map((d, i) => `${x(i)},${y(d.net)}`).join(" "), area = `${x(0)},${y(0)} ${pts} ${x(n - 1)},${y(0)}`;
+    const ticks = [...new Set([Math.round(mn), 0, Math.round(mx)])].filter((t, i, arr) => t === 0 || arr.every((u) => u === t || u === 0 || Math.abs(y(t) - y(u)) > 14) && Math.abs(y(t) - y(0)) > 14);
+    return (React.createElement("svg", { viewBox: `0 0 ${W} ${h}`, width: "100%", role: "img", "aria-label": "Net minutes saved after setup, run by run" },
+        ticks.map((t) => React.createElement("g", { key: t },
+            React.createElement("line", { x1: L, x2: W - R, y1: y(t), y2: y(t), stroke: t === 0 ? C.slate : C.mist }),
+            React.createElement("text", { x: L - 6, y: y(t) + 4, fontSize: "11", fill: C.slate, textAnchor: "end" }, t))),
+        React.createElement("polygon", { points: area, fill: C.indigo, fillOpacity: "0.25" }),
+        React.createElement("polyline", { points: pts, fill: "none", stroke: C.indigo, strokeWidth: "2", strokeLinejoin: "round" }),
+        data.map((d, i) => React.createElement("g", { key: d.name },
+            React.createElement("circle", { cx: x(i), cy: y(d.net), r: "3.5", fill: C.indigo }),
+            React.createElement("text", { x: x(i), y: h - 10, fontSize: "10", fill: C.slate, textAnchor: "middle" }, d.name)))));
+}
+function GroupBars({ data, h = 210 }) {
+    const W = 360, L = 32, R = 8, T = 22, B = 44, iw = W - L - R, ih = h - T - B, n = Math.max(data.length, 1);
+    const mx = Math.ceil(Math.max(10, ...data.map((d) => d["Avg minutes"])) / 10) * 10;
+    const y = (v) => T + ih - (v / mx) * ih, bw = Math.min(40, (iw / n) * 0.5);
+    return (React.createElement("div", null,
+        React.createElement("svg", { viewBox: `0 0 ${W} ${h}`, width: "100%", role: "img", "aria-label": "Average minutes per run and material errors, by prompt" },
+            [0, 0.5, 1].map((f) => { const v = Math.round(mx * f); return React.createElement("g", { key: f },
+                React.createElement("line", { x1: L, x2: W - R, y1: y(v), y2: y(v), stroke: C.mist }),
+                React.createElement("text", { x: L - 6, y: y(v) + 4, fontSize: "11", fill: C.slate, textAnchor: "end" }, v)); }),
+            data.map((d, i) => {
+                const cx = L + ((i + 0.5) * iw) / n, e = d["Material errors"];
+                return (React.createElement("g", { key: d.name + i },
+                    React.createElement("rect", { x: cx - bw / 2, y: y(d["Avg minutes"]), width: bw, height: Math.max(0, T + ih - y(d["Avg minutes"])), fill: C.teal, rx: "4" }),
+                    React.createElement("text", { x: cx, y: y(d["Avg minutes"]) - 4, fontSize: "11", fill: C.navy, textAnchor: "middle", fontWeight: "700" }, d["Avg minutes"]),
+                    React.createElement("text", { x: cx, y: h - 24, fontSize: "10", fill: C.slate, textAnchor: "middle" }, d.name),
+                    React.createElement("text", { x: cx, y: h - 8, fontSize: "10", fill: e > 0 ? C.coral : C.sage, textAnchor: "middle", fontWeight: "700" },
+                        e,
+                        " ",
+                        e === 1 ? "error" : "errors")));
+            })),
+        React.createElement(ChartLegend, { items: [["Average minutes per run", C.teal]] })));
+}
+/* ---------------------------------------------------------------- small UI */
+function Chip({ label, on, color, onClick }) {
+    return (React.createElement("button", { onClick: onClick, className: "text-left rounded-xl px-3 py-2 text-sm leading-snug transition-colors", style: { minHeight: 44, border: `1.5px solid ${on ? color : C.line}`, background: on ? color : "#fff", color: on ? onColor(color) : C.ink, fontFamily: SANS } }, label));
+}
+function Ring({ pct, color, size = 112, label, sub }) {
+    const r = 46, circ = 2 * Math.PI * r;
+    return (React.createElement("div", { className: "relative", style: { width: size, height: size } },
+        React.createElement("svg", { viewBox: "0 0 120 120", width: size, height: size },
+            React.createElement("circle", { cx: "60", cy: "60", r: r, fill: "none", stroke: "rgba(255,255,255,0.18)", strokeWidth: "10" }),
+            React.createElement("circle", { cx: "60", cy: "60", r: r, fill: "none", stroke: color, strokeWidth: "10", strokeLinecap: "round", strokeDasharray: circ, strokeDashoffset: circ * (1 - pct / 100), transform: "rotate(-90 60 60)", style: { transition: "stroke-dashoffset .6s ease" } })),
+        React.createElement("div", { className: "absolute inset-0 flex flex-col items-center justify-center", style: { color: "#fff" } },
+            React.createElement("div", { style: { fontFamily: SERIF, fontSize: 26, fontWeight: 700, lineHeight: 1 } }, label),
+            React.createElement("div", { style: { fontSize: 11, opacity: 0.8, marginTop: 2 } }, sub))));
+}
+function Kpi({ value, label, hint, color }) {
+    return (React.createElement("div", { className: "rounded-2xl p-3", style: { background: "#fff", border: `1px solid ${C.line}` } },
+        React.createElement("div", { style: { fontFamily: SERIF, fontSize: 26, fontWeight: 700, color, lineHeight: 1.1 } }, value),
+        React.createElement("div", { className: "text-sm font-semibold mt-1", style: { color: C.navy } }, label),
+        React.createElement("div", { className: "text-xs mt-0.5", style: { color: C.slate } }, hint)));
+}
+function Section({ title, sub, children }) {
+    return (React.createElement("section", { className: "mt-6" },
+        React.createElement("h2", { style: { fontFamily: SERIF, fontSize: 19, fontWeight: 700, color: C.navy } }, title),
+        sub && React.createElement("p", { className: "text-sm mt-0.5 mb-2", style: { color: C.slate } }, sub),
+        React.createElement("div", { className: "mt-2" }, children)));
+}
+/* ------------------------------------------------------------------- views */
+function HomeView({ st, setSt, stats, game, today, goChapter, goTab }) {
+    var _a;
+    const nextCh = CHAPTERS.find((c) => !chComplete(c, st));
+    const nextAct = nextCh && nextCh.actions.find((a) => !actionDone(a, st.answers));
+    const next = nextCh ? { ch: nextCh, read: !((_a = st.read) === null || _a === void 0 ? void 0 : _a[nextCh.n]), act: nextAct } : null;
+    const sec = SECTORS.find((s) => s.k === st.sector);
+    const partData = PARTS.map((p) => {
+        const chs = CHAPTERS.filter((c) => c.part === p.n);
+        const tot = chs.reduce((s2, c) => s2 + chSteps(c, st).total, 0), d = chs.reduce((s2, c) => s2 + chSteps(c, st).done, 0);
+        return { name: `Part ${p.n}`, pct: Math.round((d / tot) * 100), c: p.c };
+    });
+    const radar = DIMS.map((d) => { var _a; return ({ dim: d.name, v: (_a = st.dims[d.k]) !== null && _a !== void 0 ? _a : 0 }); });
+    const radarAny = Object.keys(st.dims).length > 0;
+    return (React.createElement("div", null,
+        React.createElement("div", { className: "px-5 pt-8 pb-6", style: { background: C.navy, color: "#fff" } },
+            React.createElement("p", { style: { fontSize: 13, color: "#AFC0D0" } }, "Your next career, powered by AI"),
+            React.createElement("h1", { style: { fontFamily: SERIF, fontSize: 28, fontWeight: 700, lineHeight: 1.15, marginTop: 4 } }, stats.done === 0 ? "Start with one task." : stats.chaptersDone === 14 ? "Every chapter complete." : "Keep the evidence coming."),
+            React.createElement("div", { className: "flex items-center gap-5 mt-5" },
+                React.createElement(Ring, { pct: stats.completion, color: C.amber, label: `${stats.completion}%`, sub: "complete", size: 120 }),
+                React.createElement("div", { style: { fontSize: 14, lineHeight: 1.5, color: "#D4E0EB" } },
+                    React.createElement("div", { style: { fontFamily: SERIF, fontSize: 24, color: "#fff", fontWeight: 700, lineHeight: 1.1 } },
+                        game.xp,
+                        React.createElement("span", { style: { fontSize: 13, color: "#AFC0D0", fontFamily: SANS, fontWeight: 400 } }, " / 100 points")),
+                    React.createElement("div", { style: { color: today > 0 ? C.amber : "#AFC0D0", fontWeight: 600 } }, today > 0 ? `+${today} today` : "No points yet today"),
+                    React.createElement("div", null, game.levelName),
+                    React.createElement("div", { className: "flex items-center gap-1" },
+                        React.createElement(Flame, { size: 15, color: game.streak ? C.amber : "#7F93A8" }),
+                        " ",
+                        React.createElement("b", { style: { color: "#fff" } }, game.streak),
+                        " day streak"),
+                    React.createElement("div", { className: "flex gap-4 mt-2" },
+                        React.createElement("button", { onClick: () => goTab("me"), className: "underline text-sm", style: { color: C.amber } }, sec ? `Sector: ${sec.name}` : "Choose your sector"),
+                        React.createElement("button", { onClick: () => goTab("rewards"), className: "underline text-sm", style: { color: C.amber } }, "Score and rewards")))),
+            React.createElement("div", { className: "mt-4" },
+                React.createElement("div", { className: "flex justify-between text-xs mb-1", style: { color: "#AFC0D0" } },
+                    React.createElement("span", null,
+                        "Final score ",
+                        game.xp,
+                        " / 100"),
+                    React.createElement("span", null, game.nextAt ? `${r1(game.nextAt - game.xp)} points to ${game.nextName}` : "Top rank reached")),
+                React.createElement("div", { className: "rounded-full overflow-hidden", style: { height: 8, background: "rgba(255,255,255,.18)" } },
+                    React.createElement("div", { style: { width: `${game.levelPct}%`, height: "100%", background: C.amber, transition: "width .6s ease" } })))),
+        React.createElement("div", { className: "px-5" },
+            React.createElement("div", { className: "grid grid-cols-2 gap-3 mt-5" },
+                React.createElement("div", { className: "rounded-2xl p-3", style: { background: "#fff", border: `1px solid ${C.line}` } },
+                    React.createElement("div", { className: "text-xs", style: { color: C.slate } }, "Completion"),
+                    React.createElement("div", { style: { fontFamily: SERIF, fontSize: 30, fontWeight: 700, color: C.teal, lineHeight: 1.1 } },
+                        stats.completion,
+                        "%"),
+                    React.createElement("div", { className: "rounded-full overflow-hidden mt-2", style: { height: 8, background: C.mist } },
+                        React.createElement("div", { style: { width: `${stats.completion}%`, height: "100%", background: C.teal, transition: "width .5s" } })),
+                    React.createElement("div", { className: "text-xs mt-2", style: { color: C.slate } },
+                        stats.stepsDone,
+                        " of ",
+                        stats.stepsTotal,
+                        " steps",
+                        React.createElement("br", null),
+                        stats.chaptersDone,
+                        " of 14 chapters complete")),
+                React.createElement("div", { className: "rounded-2xl p-3", style: { background: "#fff", border: `1px solid ${C.line}` } },
+                    React.createElement("div", { className: "text-xs", style: { color: C.slate } }, "Points gained"),
+                    React.createElement("div", { style: { fontFamily: SERIF, fontSize: 30, fontWeight: 700, color: AMBER_T, lineHeight: 1.1 } },
+                        game.xp,
+                        React.createElement("span", { style: { fontSize: 14, color: C.slate } }, " / 100")),
+                    React.createElement("div", { className: "flex rounded-full overflow-hidden mt-2", style: { height: 8, background: C.mist } }, game.items.map((x) => React.createElement("div", { key: x.l, title: `${x.l}: ${x.got} of ${x.max}`, style: { width: `${x.got}%`, background: x.c, transition: "width .5s" } }))),
+                    React.createElement("div", { className: "text-xs mt-2", style: { color: C.slate } },
+                        React.createElement("b", { style: { color: today > 0 ? C.tealD : C.slate } }, today > 0 ? `+${today} today` : "None yet today"),
+                        React.createElement("br", null),
+                        r1(100 - game.xp),
+                        " to go"))),
+            React.createElement("button", { onClick: () => goTab("rewards"), className: "w-full mt-2 text-left text-xs", style: { color: C.tealD, minHeight: 36 } },
+                "Reading ",
+                game.items[0].got,
+                "/14 \u00B7 Core ",
+                game.items[1].got,
+                "/42 \u00B7 AI exercises ",
+                game.items[2].got,
+                "/28 \u00B7 Evidence ",
+                game.items[3].got,
+                "/16. See the full breakdown"),
+            next && (React.createElement("button", { onClick: () => goChapter(next.ch.n), className: "w-full mt-5 rounded-2xl p-4 text-left flex items-center justify-between", style: { background: C.tealL, border: `1.5px solid ${C.teal}` } },
+                React.createElement("div", null,
+                    React.createElement("div", { className: "text-xs", style: { color: C.tealD } },
+                        "Up next \u00B7 Chapter ",
+                        next.ch.n,
+                        " \u00B7 book p. ",
+                        PAGES[next.ch.n]),
+                    React.createElement("div", { style: { fontFamily: SERIF, fontSize: 18, fontWeight: 700, color: C.navy } }, next.read ? "Read: " + next.ch.title : next.act.title),
+                    React.createElement("div", { className: "text-sm", style: { color: C.slate } }, next.read ? "Then tick it off and do the exercises" : `${next.act.qs.length} quick choices`)),
+                React.createElement(ChevronRight, { color: C.tealD }))),
+            React.createElement(Section, { title: "Chapters completed", sub: `${stats.chaptersDone} of 14. A chapter counts when you have read it and finished every exercise.` },
+                React.createElement("div", { className: "rounded-2xl p-3", style: { background: "#fff", border: `1px solid ${C.line}` } }, PARTS.map((p) => (React.createElement("div", { key: p.n, className: "flex items-center gap-2 mb-2", style: { minHeight: 40 } },
+                    React.createElement("span", { className: "text-xs shrink-0", style: { width: 52, color: C.slate } },
+                        "Part ",
+                        p.n),
+                    React.createElement("div", { className: "flex gap-2 flex-wrap" }, CHAPTERS.filter((c) => c.part === p.n).map((c) => {
+                        const x = chSteps(c, st), full = x.done === x.total;
+                        return (React.createElement("button", { key: c.n, onClick: () => goChapter(c.n), "aria-label": `Chapter ${c.n}, ${x.done} of ${x.total} steps done`, className: "rounded-full flex items-center justify-center font-bold", style: { width: 40, height: 40, fontFamily: SERIF, background: full ? p.c : "#fff", color: full ? onColor(p.c) : C.navy, border: `2px solid ${full ? p.c : x.done ? p.c : C.line}`, position: "relative" } },
+                            full ? React.createElement(Check, { size: 18 }) : c.n,
+                            !full && x.done > 0 && React.createElement("span", { style: { position: "absolute", bottom: -3, right: -3, fontSize: 9, background: p.c, color: "#fff", borderRadius: 8, padding: "0 4px" } },
+                                x.done,
+                                "/",
+                                x.total)));
+                    })))))),
+                React.createElement("button", { onClick: () => goTab("rewards"), className: "w-full mt-3 rounded-xl p-3 text-left flex items-center justify-between", style: { background: game.chDone === 14 ? C.sageL : "#fff", border: `1.5px solid ${game.chDone === 14 ? C.sage : C.line}`, minHeight: 52 } },
+                    React.createElement("span", { className: "text-sm", style: { color: C.ink } },
+                        React.createElement("b", null, game.chDone === 14 ? "Certificate unlocked" : "Final achievement"),
+                        " \u00B7 ",
+                        game.chDone === 14 ? game.finalTier : `${14 - game.chDone} chapter${14 - game.chDone === 1 ? "" : "s"} to unlock your certificate`),
+                    React.createElement(ChevronRight, { size: 18, color: C.slate }))),
+            React.createElement(Section, { title: "Next badges", sub: "The closest rewards to unlock." },
+                game.badges.filter((b) => !b.earned).sort((a, b) => b.have / b.need - a.have / a.need).slice(0, 3).map((b) => (React.createElement("div", { key: b.id, className: "flex items-center gap-3 rounded-2xl p-3 mb-2", style: { background: "#fff", border: `1px solid ${C.line}` } },
+                    React.createElement("div", { className: "flex items-center justify-center rounded-full shrink-0", style: { width: 38, height: 38, background: C.mist } },
+                        React.createElement(b.icon, { size: 18, color: C.slate })),
+                    React.createElement("div", { className: "flex-1 min-w-0" },
+                        React.createElement("div", { className: "text-sm font-semibold", style: { color: C.navy } }, b.name),
+                        React.createElement("div", { className: "text-xs", style: { color: C.slate } }, b.desc),
+                        React.createElement("div", { className: "mt-1.5 rounded-full overflow-hidden", style: { height: 5, background: C.mist } },
+                            React.createElement("div", { style: { width: `${(b.have / b.need) * 100}%`, height: "100%", background: C.amber } }))),
+                    React.createElement("div", { className: "text-xs shrink-0", style: { color: C.slate } },
+                        b.have,
+                        "/",
+                        b.need)))),
+                game.badges.every((b) => b.earned) && React.createElement("p", { className: "text-sm", style: { color: C.slate } }, "Every badge earned.")),
+            React.createElement(Section, { title: "Your key measures", sub: "Updated as you complete exercises and log experiments." },
+                React.createElement("div", { className: "grid grid-cols-2 gap-3" },
+                    React.createElement(Kpi, { value: `${stats.match}%`, label: "Good-practice match", hint: "Choices that follow the book\u2019s guidance", color: C.teal }),
+                    React.createElement(Kpi, { value: stats.netMin === null ? "–" : `${stats.netMin > 0 ? "+" : ""}${stats.netMin} min`, label: "Net time saved", hint: st.runs.length ? `After setup, over ${st.runs.length} runs` : "Log a run in Measure", color: stats.netMin !== null && stats.netMin < 0 ? C.coral : C.indigo }),
+                    React.createElement(Kpi, { value: `${stats.scoreN}/8`, label: "Leadership score", hint: stats.scoreN >= 8 ? "Scale with confidence" : stats.scoreN >= 6 ? "Close the gaps" : "Build discipline first", color: C.sage }),
+                    React.createElement(Kpi, { value: stats.errors === null ? "–" : stats.errors, label: "Material errors", hint: "Across logged runs", color: stats.errors > 0 ? C.coral : C.teal }))),
+            React.createElement(Section, { title: "Progress by part" },
+                React.createElement("div", { className: "rounded-2xl p-3", style: { background: "#fff", border: `1px solid ${C.line}` } },
+                    React.createElement(BarsChart, { data: partData }))),
+            React.createElement(Section, { title: "Initiative health", sub: radarAny ? "From your five-question review (2 pass, 1 strengthen, 0 stop)." : "Complete the five-question review in Measure to see your shape." },
+                React.createElement("div", { className: "rounded-2xl p-3", style: { background: "#fff", border: `1px solid ${C.line}` } },
+                    React.createElement(RadarShape, { data: radar }),
+                    React.createElement("button", { onClick: () => goTab("measure"), className: "text-sm underline", style: { color: C.tealD } }, "Open Measure"))))));
+}
+function JourneyView({ st, goChapter }) {
+    return (React.createElement("div", { className: "px-5 pt-8 pb-4" },
+        React.createElement("h1", { style: { fontFamily: SERIF, fontSize: 26, fontWeight: 700, color: C.navy } }, "Your journey"),
+        React.createElement("p", { className: "text-sm mt-1", style: { color: C.slate } }, "Fourteen chapters. Each has a few taps, not an essay."),
+        React.createElement("div", { className: "mt-5" }, PARTS.map((p) => {
+            const chs = CHAPTERS.filter((c) => c.part === p.n);
+            return (React.createElement("div", { key: p.n, className: "mb-6" },
+                React.createElement("div", { className: "flex items-center gap-2 mb-2" },
+                    React.createElement("span", { className: "rounded-full", style: { width: 10, height: 10, background: p.c } }),
+                    React.createElement("h2", { style: { fontFamily: SERIF, fontSize: 16, fontWeight: 700, color: C.navy } },
+                        "Part ",
+                        p.n,
+                        ": ",
+                        p.name)),
+                React.createElement("div", { style: { borderLeft: `2px dotted ${p.c}`, marginLeft: 4, paddingLeft: 14 } }, chs.map((c) => {
+                    const x = chSteps(c, st);
+                    const pct = Math.round((x.done / x.total) * 100);
+                    return (React.createElement("button", { key: c.n, onClick: () => goChapter(c.n), className: "w-full text-left rounded-2xl p-3 mb-2 flex items-center gap-3", style: { background: "#fff", border: `1px solid ${C.line}` } },
+                        React.createElement("div", { className: "flex items-center justify-center rounded-full shrink-0", style: { width: 38, height: 38, background: pct === 100 ? p.c : C.mist, color: pct === 100 ? onColor(p.c) : C.navy, fontWeight: 700, fontFamily: SERIF } }, pct === 100 ? React.createElement(Check, { size: 18 }) : c.n),
+                        React.createElement("div", { className: "flex-1 min-w-0" },
+                            React.createElement("div", { className: "flex items-start justify-between gap-2" },
+                                React.createElement("div", { className: "text-sm font-semibold", style: { color: C.navy } }, c.title),
+                                React.createElement(StarRow, { n: chStars(c, st) })),
+                            React.createElement("div", { className: "text-xs mt-0.5", style: { color: C.slate } },
+                                "Book p. ",
+                                PAGES[c.n],
+                                " \u00B7 ",
+                                x.done,
+                                " of ",
+                                x.total,
+                                " steps"),
+                            React.createElement("div", { className: "mt-1.5 rounded-full overflow-hidden", style: { height: 5, background: C.mist } },
+                                React.createElement("div", { style: { width: `${pct}%`, height: "100%", background: p.c, transition: "width .4s" } }))),
+                        React.createElement(ChevronRight, { size: 18, color: C.slate })));
+                }))));
+        }))));
+}
+function CopyBtn({ text }) {
+    const [ok, setOk] = useState(false);
+    const copy = async () => {
+        try {
+            await navigator.clipboard.writeText(text);
+            setOk(true);
+        }
+        catch (e) {
+            try {
+                const t = document.createElement("textarea");
+                t.value = text;
+                document.body.appendChild(t);
+                t.select();
+                document.execCommand("copy");
+                document.body.removeChild(t);
+                setOk(true);
+            }
+            catch (e2) {
+                setOk(false);
+            }
+        }
+        setTimeout(() => setOk(false), 2000);
+    };
+    return React.createElement("button", { onClick: copy, className: "rounded-lg px-3 text-sm font-semibold", style: { minHeight: 36, background: ok ? C.sage : C.navy, color: "#fff" } }, ok ? "Copied" : "Copy prompt");
+}
+function ActionCard({ a, st, setAnswer, resetAction, color, sector, idx, total, openPrompt }) {
+    const [open, setOpen] = useState(false);
+    const ans = st.answers[a.id] || {};
+    const done = actionDone(a, st.answers);
+    const verdict = done && a.verdict ? a.verdict(ans) : null;
+    return (React.createElement("div", { className: "rounded-2xl mb-3 overflow-hidden", style: { background: "#fff", border: `1.5px solid ${done ? color : C.line}` } },
+        React.createElement("button", { onClick: () => setOpen(!open), className: "w-full flex items-center gap-3 p-4 text-left" },
+            React.createElement("div", { className: "flex items-center justify-center rounded-full shrink-0", style: { width: 28, height: 28, background: done ? color : "#fff", border: `2px solid ${done ? color : C.line}`, color: "#fff" } }, done && React.createElement(Check, { size: 16 })),
+            React.createElement("div", { className: "flex-1" },
+                React.createElement("div", { style: { fontFamily: SERIF, fontSize: 16, fontWeight: 700, color: C.navy } }, a.title),
+                React.createElement("div", { className: "text-xs", style: { color: C.slate } },
+                    "Exercise ",
+                    idx,
+                    " of ",
+                    total,
+                    " \u00B7 ",
+                    done ? "Done" : `${Object.keys(ans).length} of ${a.qs.length} answered`),
+                React.createElement("div", { className: "text-xs", style: { color: C.slate } },
+                    a.ai ? React.createElement("b", { style: { color: AMBER_T } }, "AI exercise \u00B7 ") : null,
+                    "Book: ",
+                    a.ref,
+                    a.ws ? React.createElement("b", { style: { color: color } },
+                        " \u00B7 Worksheet ",
+                        String(a.ws).padStart(2, "0")) : null)),
+            React.createElement(ChevronRight, { size: 18, color: C.slate, style: { transform: open ? "rotate(90deg)" : "none", transition: "transform .2s" } })),
+        open && (React.createElement("div", { className: "px-4 pb-4" },
+            a.prompt && (React.createElement("div", { className: "rounded-xl p-3 mb-4", style: { background: C.paper, border: `1px solid ${C.line}`, borderLeft: `4px solid ${C.amber}` } },
+                React.createElement("div", { className: "flex items-center justify-between mb-2" },
+                    React.createElement("div", { className: "text-sm font-semibold", style: { color: C.navy } }, "Prompt to paste"),
+                    React.createElement(CopyBtn, { text: a.prompt.map(showPrompt).join("\n\n") })),
+                a.prompt.map((p, i) => React.createElement("p", { key: i, className: "text-xs mb-2", style: { fontFamily: "ui-monospace, Menlo, Consolas, monospace", color: C.ink, lineHeight: 1.5, userSelect: "text" } }, showPrompt(p))),
+                React.createElement("p", { className: "text-xs", style: { color: C.slate } }, "Written for Claude and plain text, so it also works in ChatGPT. Use only a tool your organisation approves, with fictional or approved information."),
+                React.createElement("button", { onClick: () => openPrompt(a.pid), className: "mt-2 rounded-lg px-3 text-sm font-semibold flex items-center gap-1", style: { minHeight: 40, background: C.amber, color: C.navy } },
+                    React.createElement(Play, { size: 14 }),
+                    " Open this prompt in the app"))),
+            a.qs.map((q) => (React.createElement("div", { key: q.id, className: "mb-4" },
+                React.createElement("div", { className: "text-sm font-semibold mb-2", style: { color: C.ink } }, q.q),
+                React.createElement("div", { className: "grid gap-2", style: { gridTemplateColumns: optsOf(q, sector).every((o) => o.length < 14) ? "repeat(2, minmax(0, 1fr))" : "1fr" } }, optsOf(q, sector).map((o, i) => (React.createElement(Chip, { key: i, label: o, on: ans[q.id] === i, color: color, onClick: () => setAnswer(a.id, q.id, i) }))))))),
+            verdict && (React.createElement("div", { className: "rounded-xl p-3 mb-3", style: { background: "#fff", border: `2px solid ${verdict.c}` } },
+                React.createElement("div", { style: { fontFamily: SERIF, fontWeight: 700, color: verdict.c, fontSize: 16 } }, verdict.t),
+                React.createElement("div", { className: "text-sm", style: { color: C.ink } }, verdict.d))),
+            done && (React.createElement("div", { className: "rounded-xl p-3 mb-3", style: { background: C.paper, border: `1px solid ${C.line}` } },
+                React.createElement("div", { className: "text-xs font-semibold mb-1", style: { color: C.slate } }, "Your plan"),
+                a.qs.map((q) => (React.createElement("div", { key: q.id, className: "text-sm mb-1", style: { color: C.ink } },
+                    React.createElement("span", { style: { color: C.slate } },
+                        q.q.replace(/[?:…]$/, ""),
+                        ": "),
+                    React.createElement("b", null, optsOf(q, sector)[ans[q.id]])))))),
+            Object.keys(ans).length > 0 && (React.createElement("button", { onClick: () => resetAction(a.id), className: "flex items-center gap-1 text-sm", style: { color: C.slate } },
+                React.createElement(RotateCcw, { size: 14 }),
+                " Start this exercise again"))))));
+}
+function ChapterView({ ch, st, setAnswer, resetAction, toggleRead, openPrompt, back }) {
+    var _a, _b, _c, _d, _e, _f;
+    const part = PARTS.find((p) => p.n === ch.part);
+    const tip = (_a = TIPS[ch.n]) === null || _a === void 0 ? void 0 : _a[st.sector];
+    const sec = SECTORS.find((s) => s.k === st.sector);
+    const steps = chSteps(ch, st);
+    return (React.createElement("div", null,
+        React.createElement("div", { className: "px-5 pt-6 pb-6", style: { background: part.c, color: onColor(part.c) } },
+            React.createElement("button", { onClick: back, className: "flex items-center gap-1 text-sm mb-3", style: { color: onColor(part.c), opacity: 0.95 } },
+                React.createElement(ChevronLeft, { size: 18 }),
+                " Journey"),
+            React.createElement("div", { className: "text-sm", style: { opacity: 0.9 } },
+                "Chapter ",
+                ch.n,
+                " \u00B7 Part ",
+                ch.part,
+                " \u00B7 book p. ",
+                PAGES[ch.n]),
+            React.createElement("h1", { style: { fontFamily: SERIF, fontSize: 26, fontWeight: 700, lineHeight: 1.15, marginTop: 2 } }, ch.title),
+            React.createElement("p", { className: "text-sm mt-2", style: { opacity: 0.95 } }, ch.goal),
+            React.createElement("div", { className: "mt-3 flex items-center gap-2 text-xs", style: { opacity: 0.95 } },
+                React.createElement(StarRow, { n: chStars(ch, st), size: 16, light: true }),
+                React.createElement("span", null, chStars(ch, st) === 3 ? "Three stars: every graded choice follows the book" : chStars(ch, st) === 2 ? "Finish with the book’s preferred choices for a third star" : "Read the chapter and finish every exercise for two stars"))),
+        React.createElement("div", { className: "px-5 pt-5" },
+            tip && sec && (React.createElement("div", { className: "rounded-2xl p-3 mb-4 flex gap-3", style: { background: "#fff", borderLeft: `5px solid ${sec.c}`, border: `1px solid ${C.line}`, borderLeftWidth: 5, borderLeftColor: sec.c } },
+                React.createElement(Lightbulb, { size: 18, color: sec.c, className: "shrink-0 mt-0.5" }),
+                React.createElement("div", { className: "text-sm", style: { color: C.ink } },
+                    React.createElement("b", null,
+                        sec.name,
+                        "."),
+                    " ",
+                    tip))),
+            !st.sector && ch.n <= 10 && (React.createElement("div", { className: "text-xs mb-3", style: { color: C.slate } }, "Choose your sector under Me to see industry tips and starter tasks.")),
+            React.createElement("div", { className: "rounded-2xl p-4 mb-4", style: { background: "#fff", border: `1px solid ${C.line}` } },
+                React.createElement("div", { className: "flex items-center justify-between mb-2" },
+                    React.createElement("div", { style: { fontFamily: SERIF, fontWeight: 700, color: C.navy } }, "Chapter checklist"),
+                    React.createElement("div", { className: "text-sm font-semibold", style: { color: part.c } },
+                        steps.done,
+                        " of ",
+                        steps.total)),
+                React.createElement("div", { className: "rounded-full overflow-hidden mb-3", style: { height: 6, background: C.mist } },
+                    React.createElement("div", { style: { width: `${(steps.done / steps.total) * 100}%`, height: "100%", background: part.c, transition: "width .4s" } })),
+                React.createElement("button", { onClick: () => toggleRead(ch.n), className: "w-full flex items-center gap-3 rounded-xl p-3 text-left mb-2", style: { background: ((_b = st.read) === null || _b === void 0 ? void 0 : _b[ch.n]) ? C.sageL : C.paper, border: `1.5px solid ${((_c = st.read) === null || _c === void 0 ? void 0 : _c[ch.n]) ? C.sage : C.line}`, minHeight: 52 } },
+                    React.createElement("span", { className: "flex items-center justify-center rounded-md shrink-0", style: { width: 24, height: 24, background: ((_d = st.read) === null || _d === void 0 ? void 0 : _d[ch.n]) ? C.sage : "#fff", border: `2px solid ${((_e = st.read) === null || _e === void 0 ? void 0 : _e[ch.n]) ? C.sage : C.line}` } }, ((_f = st.read) === null || _f === void 0 ? void 0 : _f[ch.n]) && React.createElement(Check, { size: 15, color: "#fff" })),
+                    React.createElement("span", { className: "text-sm", style: { color: C.ink } },
+                        "I have read Chapter ",
+                        ch.n,
+                        " (book p. ",
+                        PAGES[ch.n],
+                        ")")),
+                ch.actions.map((a, i) => (React.createElement("div", { key: a.id, className: "flex items-center gap-3 px-3 py-1.5 text-sm", style: { color: actionDone(a, st.answers) ? C.ink : C.slate } },
+                    React.createElement("span", { className: "flex items-center justify-center rounded-full shrink-0", style: { width: 20, height: 20, background: actionDone(a, st.answers) ? part.c : "#fff", border: `2px solid ${actionDone(a, st.answers) ? part.c : C.line}` } }, actionDone(a, st.answers) && React.createElement(Check, { size: 12, color: "#fff" })),
+                    React.createElement("span", null, a.title))))),
+            steps.done === steps.total && (React.createElement("div", { className: "rounded-2xl p-4 mb-4 flex items-center gap-3", style: { background: part.c, color: onColor(part.c) } },
+                React.createElement(Trophy, { size: 22 }),
+                React.createElement("div", null,
+                    React.createElement("div", { style: { fontFamily: SERIF, fontWeight: 700 } },
+                        "Chapter ",
+                        ch.n,
+                        " complete"),
+                    React.createElement("div", { className: "text-sm", style: { opacity: 0.95 } }, ch.n < 14 ? "Carry your evidence into the next chapter." : "You have finished the book’s exercises.")))),
+            ch.actions.map((a, i) => (React.createElement(ActionCard, { key: a.id, a: a, st: st, setAnswer: setAnswer, resetAction: resetAction, color: part.c, sector: st.sector, idx: i + 1, total: ch.actions.length, openPrompt: openPrompt }))))));
+}
+/* ----------------------------------------------------------------- measure */
+function Seg({ options, value, onChange, color }) {
+    return (React.createElement("div", { className: "flex flex-wrap gap-2" }, options.map((o) => {
+        var _a, _b, _c;
+        return (React.createElement(Chip, { key: String((_a = o.v) !== null && _a !== void 0 ? _a : o), label: (_b = o.l) !== null && _b !== void 0 ? _b : String(o), on: value === ((_c = o.v) !== null && _c !== void 0 ? _c : o), color: color, onClick: () => { var _a; return onChange((_a = o.v) !== null && _a !== void 0 ? _a : o); } }));
+    })));
+}
+function MeasureView({ st, setSt, stats }) {
+    const [sub, setSub] = useState("exp");
+    const tabs = [["exp", "Experiment"], ["rev", "Review"], ["score", "Scorecard"], ["tier", "Tier"]];
+    const setField = (k, v) => setSt((s) => ({ ...s, [k]: v }));
+    const runs = st.runs;
+    const chartData = runs.map((r, i) => ({ name: `Run ${i + 1}`, Draft: r.d, "Check and fix": r.c }));
+    let cum = -st.setup;
+    const cumData = [{ name: "Setup", net: -st.setup }, ...runs.map((r, i) => { cum += st.baseline - (r.d + r.c); return { name: `Run ${i + 1}`, net: cum }; })];
+    const avg = runs.length ? Math.round(runs.reduce((s, r) => s + r.d + r.c, 0) / runs.length) : null;
+    const savePerRun = avg !== null ? st.baseline - avg : null;
+    const breakeven = savePerRun > 0 ? Math.ceil(st.setup / savePerRun) : null;
+    const byPrompt = [...new Set(runs.filter((r) => r.pt).map((r) => r.pt))].map((n) => { const rr = runs.filter((r) => r.pt === n); return { name: n.length > 18 ? n.slice(0, 17) + "…" : n, "Avg minutes": Math.round(rr.reduce((s2, r) => s2 + r.d + r.c, 0) / rr.length), "Material errors": rr.reduce((s2, r) => s2 + r.e, 0), n: rr.length }; });
+    const addRun = () => setSt((s) => ({ ...s, runs: [...s.runs, { ...s.draft }] }));
+    const delRun = (i) => setSt((s) => ({ ...s, runs: s.runs.filter((_, k) => k !== i) }));
+    const dimAnswered = Object.keys(st.dims).length;
+    const dimVals = DIMS.map((d) => st.dims[d.k]);
+    const verdict = dimAnswered < 5 ? null : dimVals.includes(0) ? { t: "Stop or redirect", c: C.coral, d: "At least one dimension fails. Redesign or stop before spending more." }
+        : dimVals.includes(1) ? { t: "Strengthen first", c: C.amber, d: "Fix the weak dimensions, then run the gate again." }
+            : { t: "Ready for the next gate", c: C.teal, d: "All five dimensions pass. Scale one step, keeping stop rules active." };
+    const tq = [
+        { k: "a", q: "If an output is wrong and nobody notices, who is affected?", o: ["Only an internal draft a person reviews", "A customer, employee or an operational decision", "Credit, clinical, safety or legal outcomes"] },
+        { k: "b", q: "How reversible is the action?", o: ["Easily reversed", "Costly to reverse", "Irreversible"] },
+        { k: "c", q: "What data is involved?", o: ["No personal data", "Some personal data", "Regulated or sensitive data at scale"] },
+    ];
+    const tierIdx = tq.every((x) => st.tier[x.k] !== undefined) ? Math.max(...tq.map((x) => st.tier[x.k])) : null;
+    const card = { background: "#fff", border: `1px solid ${C.line}` };
+    return (React.createElement("div", { className: "px-5 pt-8 pb-4" },
+        React.createElement("h1", { style: { fontFamily: SERIF, fontSize: 26, fontWeight: 700, color: C.navy } }, "Measure"),
+        React.createElement("p", { className: "text-sm mt-1", style: { color: C.slate } }, "Track what actually changed, not what felt faster."),
+        React.createElement("div", { className: "flex gap-2 mt-4 overflow-x-auto pb-1" }, tabs.map(([k, l]) => (React.createElement("button", { key: k, onClick: () => setSub(k), className: "rounded-full px-4 text-sm shrink-0", style: { minHeight: 40, background: sub === k ? C.navy : "#fff", color: sub === k ? "#fff" : C.ink, border: `1px solid ${sub === k ? C.navy : C.line}` } }, l)))),
+        sub === "exp" && (React.createElement("div", null,
+            React.createElement(Section, { title: "Your baseline", sub: "Minutes for one comparable run done the old way, including checking." },
+                React.createElement(Seg, { options: [30, 60, 90, 120, 180].map((v) => ({ v, l: `${v} min` })), value: st.baseline, onChange: (v) => setField("baseline", v), color: C.teal })),
+            React.createElement(Section, { title: "One-time setup", sub: "Time spent on the template and agreeing the rules." },
+                React.createElement(Seg, { options: [0, 30, 60, 120, 240].map((v) => ({ v, l: `${v} min` })), value: st.setup, onChange: (v) => setField("setup", v), color: C.teal })),
+            React.createElement(Section, { title: "Log a run" },
+                React.createElement("div", { className: "rounded-2xl p-4", style: card },
+                    React.createElement("div", { className: "text-sm font-semibold mb-2" }, "Drafting minutes"),
+                    React.createElement(Seg, { options: [5, 10, 15, 20, 30].map((v) => ({ v, l: `${v}` })), value: st.draft.d, onChange: (v) => setSt((s) => ({ ...s, draft: { ...s.draft, d: v } })), color: C.teal }),
+                    React.createElement("div", { className: "text-sm font-semibold mt-4 mb-2" }, "Check and fix minutes"),
+                    React.createElement(Seg, { options: [10, 20, 30, 40, 50, 60, 90].map((v) => ({ v, l: `${v}` })), value: st.draft.c, onChange: (v) => setSt((s) => ({ ...s, draft: { ...s.draft, c: v } })), color: C.amber }),
+                    React.createElement("div", { className: "text-sm font-semibold mt-4 mb-2" }, "Material errors that reached the final"),
+                    React.createElement(Seg, { options: [0, 1, 2, 3].map((v) => ({ v, l: v === 3 ? "3+" : `${v}` })), value: st.draft.e, onChange: (v) => setSt((s) => ({ ...s, draft: { ...s.draft, e: v } })), color: C.coral }),
+                    React.createElement("button", { onClick: addRun, className: "w-full mt-4 rounded-xl flex items-center justify-center gap-2 font-semibold", style: { minHeight: 48, background: C.teal, color: "#fff" } },
+                        React.createElement(Plus, { size: 18 }),
+                        " Add run (",
+                        st.draft.d + st.draft.c,
+                        " min)"))),
+            runs.length > 0 && (React.createElement(React.Fragment, null,
+                React.createElement(Section, { title: "Results" },
+                    React.createElement("div", { className: "grid grid-cols-3 gap-2" },
+                        React.createElement(Kpi, { value: `${avg}`, label: "Avg minutes", hint: `vs ${st.baseline}`, color: C.teal }),
+                        React.createElement(Kpi, { value: savePerRun > 0 ? `${savePerRun}` : `${savePerRun}`, label: "Saved per run", hint: "minutes", color: savePerRun > 0 ? C.indigo : C.coral }),
+                        React.createElement(Kpi, { value: breakeven ? `${breakeven}` : "–", label: "Runs to break even", hint: "covering setup", color: C.amber }))),
+                React.createElement(Section, { title: "Minutes per run", sub: "Dashed line is your manual baseline." },
+                    React.createElement("div", { className: "rounded-2xl p-3", style: card },
+                        React.createElement(StackedRuns, { data: chartData, baseline: st.baseline }))),
+                React.createElement(Section, { title: "Net saving after setup", sub: "Above zero means the experiment has paid back its setup time." },
+                    React.createElement("div", { className: "rounded-2xl p-3", style: card },
+                        React.createElement(NetLine, { data: cumData }))),
+                byPrompt.length >= 2 && (React.createElement(Section, { title: "Compare prompts", sub: "Average minutes per run and total material errors, by prompt. Use the same sources and at least three runs of each prompt before drawing conclusions." },
+                    React.createElement("div", { className: "rounded-2xl p-3", style: card },
+                        React.createElement(GroupBars, { data: byPrompt }),
+                        React.createElement("p", { className: "text-xs mt-1", style: { color: C.slate } },
+                            "Runs per prompt: ",
+                            byPrompt.map((b) => `${b.name} ${b.n}`).join(" · "),
+                            ". Results can change when a vendor updates a model.")))),
+                React.createElement(Section, { title: "Your runs" },
+                    runs.map((r, i) => (React.createElement("div", { key: i, className: "flex items-center justify-between rounded-xl p-3 mb-2", style: card },
+                        React.createElement("div", { className: "text-sm" },
+                            React.createElement("b", null,
+                                "Run ",
+                                i + 1),
+                            r.pt ? ` (${r.pt.slice(0, 26)})` : "",
+                            ": ",
+                            r.d,
+                            " + ",
+                            r.c,
+                            " = ",
+                            r.d + r.c,
+                            " min \u00B7 ",
+                            r.e,
+                            " error",
+                            r.e === 1 ? "" : "s"),
+                        React.createElement("button", { onClick: () => delRun(i), "aria-label": `Delete run ${i + 1}`, style: { minWidth: 40, minHeight: 40 } },
+                            React.createElement(Trash2, { size: 16, color: C.slate }))))),
+                    React.createElement("p", { className: "text-xs mt-2", style: { color: C.slate } }, "Final errors describe the reviewed report, not the raw draft. Time excludes tool charges and support. Six good runs do not prove general reliability."),
+                    savePerRun <= 0 && React.createElement("div", { className: "rounded-xl p-3 mt-2 text-sm", style: { background: C.coralL, color: C.ink } }, "Checking is eating the saving. Consider changing the task, or stopping. A stopped experiment is still useful evidence.")))),
+            runs.length === 0 && React.createElement("div", { className: "rounded-2xl p-4 mt-5 text-sm", style: { background: C.mist, color: C.slate } }, "Add your first run to see the charts."))),
+        sub === "rev" && (React.createElement("div", null,
+            React.createElement(Section, { title: "Five-question review", sub: "Use at approval, pilot review and scale decisions." },
+                DIMS.map((d) => (React.createElement("div", { key: d.k, className: "rounded-2xl p-4 mb-3", style: card },
+                    React.createElement("div", { style: { fontFamily: SERIF, fontWeight: 700, color: C.navy } }, d.name),
+                    React.createElement("div", { className: "text-sm mb-2", style: { color: C.slate } }, d.q),
+                    React.createElement("div", { className: "grid grid-cols-3 gap-2" }, [["Pass", 2, C.teal], ["Strengthen", 1, C.amber], ["Stop", 0, C.coral]].map(([l, v, col]) => (React.createElement(Chip, { key: l, label: l, on: st.dims[d.k] === v, color: col, onClick: () => setSt((s) => ({ ...s, dims: { ...s.dims, [d.k]: v } })) }))))))),
+                verdict && (React.createElement("div", { className: "rounded-2xl p-4", style: { background: "#fff", border: `2px solid ${verdict.c}` } },
+                    React.createElement("div", { style: { fontFamily: SERIF, fontSize: 18, fontWeight: 700, color: verdict.c } }, verdict.t),
+                    React.createElement("div", { className: "text-sm", style: { color: C.ink } }, verdict.d)))))),
+        sub === "score" && (React.createElement("div", null,
+            React.createElement(Section, { title: "Eight-point leadership scorecard", sub: "Tick only what you can say yes to without hedging." },
+                React.createElement("div", { className: "rounded-2xl p-4 mb-3 flex items-center gap-4", style: { background: C.navy, color: "#fff" } },
+                    React.createElement("div", { style: { fontFamily: SERIF, fontSize: 40, fontWeight: 700, color: C.amber, lineHeight: 1 } },
+                        stats.scoreN,
+                        React.createElement("span", { style: { fontSize: 20, color: "#AFC0D0" } }, "/8")),
+                    React.createElement("div", { className: "text-sm", style: { color: "#D4E0EB" } }, stats.scoreN >= 8 ? "Scale with confidence." : stats.scoreN >= 6 ? "Identify the gaps and act on them." : "Build operating discipline before adding more pilots.")),
+                SCORECARD.map((t, i) => {
+                    const on = !!st.score[i];
+                    return (React.createElement("button", { key: i, onClick: () => setSt((s) => ({ ...s, score: { ...s.score, [i]: !on } })), className: "w-full flex items-center gap-3 rounded-xl p-3 mb-2 text-left", style: { background: on ? C.sageL : "#fff", border: `1.5px solid ${on ? C.sage : C.line}`, minHeight: 52 } },
+                        React.createElement("span", { className: "flex items-center justify-center rounded-md shrink-0", style: { width: 24, height: 24, background: on ? C.sage : "#fff", border: `2px solid ${on ? C.sage : C.line}` } }, on && React.createElement(Check, { size: 15, color: "#fff" })),
+                        React.createElement("span", { className: "text-sm", style: { color: C.ink } }, t)));
+                })))),
+        sub === "tier" && (React.createElement("div", null,
+            React.createElement(Section, { title: "Governance tier finder", sub: "Match controls to consequence." },
+                tq.map((x) => (React.createElement("div", { key: x.k, className: "rounded-2xl p-4 mb-3", style: card },
+                    React.createElement("div", { className: "text-sm font-semibold mb-2" }, x.q),
+                    React.createElement("div", { className: "grid gap-2" }, x.o.map((o, i) => React.createElement(Chip, { key: i, label: o, on: st.tier[x.k] === i, color: C.indigo, onClick: () => setSt((s) => ({ ...s, tier: { ...s.tier, [x.k]: i } })) })))))),
+                tierIdx !== null && (() => {
+                    const T = TIERS[tierIdx];
+                    return (React.createElement("div", { className: "rounded-2xl p-4", style: { background: T.l, border: `2px solid ${T.c}` } },
+                        React.createElement("div", { style: { fontFamily: SERIF, fontSize: 20, fontWeight: 700, color: T.c } }, T.t),
+                        React.createElement("div", { className: "text-sm mb-2", style: { color: C.ink } },
+                            T.d,
+                            " Controls to put in place:"),
+                        T.ctl.map((c) => React.createElement("div", { key: c, className: "text-sm flex gap-2 mb-1" },
+                            React.createElement(Check, { size: 16, color: T.c, className: "shrink-0 mt-0.5" }),
+                            c))));
+                })())))));
+}
+const SETUP = {
+    Claude: ["Go to claude.ai and choose Sign up.", "Continue with Google or Apple, or enter your email. With email, Claude sends a secure login link instead of asking for a password.", "Verify your phone number with the six-digit text message code. A number from a supported location is required, the step cannot be skipped and a verified number cannot be changed later.", "Accept the terms. If asked, choose personal use and start with the free plan.", "Open Settings, then Privacy, and decide whether your conversations may be used to improve the model.", "Send a first message: “In three sentences, tell me what you can and cannot help me with at work.”"],
+    ChatGPT: ["Go to chatgpt.com. You can try it without an account, but chats are not saved.", "Choose Sign up. Enter your email and create a password, or continue with Google, Microsoft or Apple.", "Open the verification email and confirm your address. You may also be asked to verify a phone number.", "Open Settings, then Data controls, and decide whether “Improve the model for everyone” stays on.", "Send the same first message and read the answer critically."],
+};
+const SETUP_LINKS = { Claude: { url: "https://claude.ai", help: "https://support.claude.com", label: "claude.ai", helpLabel: "support.claude.com" }, ChatGPT: { url: "https://chatgpt.com", help: "https://help.openai.com", label: "chatgpt.com", helpLabel: "help.openai.com" } };
+function SetupGuide() {
+    const [tool, setTool] = useState("Claude");
+    const [ticks, setTicks] = useState({});
+    const steps = SETUP[tool];
+    return (React.createElement("div", { className: "rounded-2xl p-4", style: { background: "#fff", border: `1px solid ${C.line}` } },
+        React.createElement("p", { className: "text-sm mb-3", style: { color: C.ink, lineHeight: 1.5 } }, "You need one assistant account for the AI exercises. Use your employer\u2019s approved assistant if there is one, check that your country is supported, and keep a phone nearby for a text message code."),
+        React.createElement("div", { className: "flex gap-2 mb-3" }, Object.keys(SETUP).map((k) => React.createElement(Chip, { key: k, label: k, on: tool === k, color: C.teal, onClick: () => setTool(k) }))),
+        React.createElement("div", { className: "flex flex-wrap gap-2 mb-3" },
+            React.createElement("a", { href: SETUP_LINKS[tool].url, target: "_blank", rel: "noreferrer", className: "rounded-lg px-3 font-semibold text-sm", style: { minHeight: 40, lineHeight: "40px", background: C.navy, color: "#fff" } },
+                "Open ",
+                SETUP_LINKS[tool].label),
+            React.createElement("a", { href: SETUP_LINKS[tool].help, target: "_blank", rel: "noreferrer", className: "rounded-lg px-3 text-sm", style: { minHeight: 40, lineHeight: "38px", border: `1.5px solid ${C.line}`, color: C.tealD } },
+                "Help: ",
+                SETUP_LINKS[tool].helpLabel)),
+        steps.map((x, i) => {
+            const on = !!ticks[`${tool}${i}`];
+            return (React.createElement("button", { key: i, onClick: () => setTicks((s) => ({ ...s, [`${tool}${i}`]: !on })), className: "w-full flex items-start gap-3 rounded-xl p-3 mb-2 text-left", style: { background: on ? C.sageL : C.paper, border: `1.5px solid ${on ? C.sage : C.line}`, minHeight: 48 } },
+                React.createElement("span", { className: "flex items-center justify-center rounded-full shrink-0", style: { width: 24, height: 24, background: on ? C.sage : "#fff", border: `2px solid ${on ? C.sage : C.line}`, color: "#fff", fontSize: 12, fontWeight: 700 } }, on ? React.createElement(Check, { size: 14 }) : React.createElement("span", { style: { color: C.slate } }, i + 1)),
+                React.createElement("span", { className: "text-sm", style: { color: C.ink, lineHeight: 1.45 } }, x)));
+        }),
+        React.createElement("p", { className: "text-xs mt-2", style: { color: C.slate } }, "No email? Check spam and wait ten minutes. No text message? Check the number and country, and do not use a temporary or shared number. Plans, limits and menu names change often, so trust the vendor\u2019s current help pages (support.claude.com or help.openai.com). Never paste passwords or confidential information into any assistant."),
+        React.createElement("p", { className: "text-xs mt-2", style: { color: C.slate } }, "This app and the book are independent and not affiliated with or endorsed by Anthropic or OpenAI. Claude is a trademark of Anthropic, and ChatGPT is a trademark of OpenAI.")));
+}
+function MeView({ st, setSt, stats, reset, goTab }) {
+    const [confirm, setConfirm] = useState(false);
+    return (React.createElement("div", { className: "px-5 pt-8 pb-4" },
+        React.createElement("h1", { style: { fontFamily: SERIF, fontSize: 26, fontWeight: 700, color: C.navy } }, "Me"),
+        React.createElement(Section, { title: "Your sector", sub: "Sets starter tasks and industry tips in each chapter." },
+            React.createElement("div", { className: "grid gap-2" }, SECTORS.map((s) => React.createElement(Chip, { key: s.k, label: s.name, on: st.sector === s.k, color: s.c, onClick: () => setSt((x) => ({ ...x, sector: s.k })) })))),
+        React.createElement(Section, { title: "Set up an assistant account", sub: "A simple walk-through for Claude or ChatGPT." },
+            React.createElement(SetupGuide, null)),
+        React.createElement(Section, { title: "Rewards" },
+            React.createElement("button", { onClick: () => goTab("rewards"), className: "rounded-xl px-4 font-semibold flex items-center gap-2", style: { minHeight: 44, background: C.navy, color: "#fff" } },
+                React.createElement(Trophy, { size: 16 }),
+                " View score, certificate and badges")),
+        React.createElement(Section, { title: "Where you stand" },
+            React.createElement("div", { className: "rounded-2xl p-4 text-sm", style: { background: "#fff", border: `1px solid ${C.line}`, color: C.ink, lineHeight: 1.7 } },
+                stats.chaptersDone,
+                " of 14 chapters complete \u00B7 ",
+                stats.done,
+                " of ",
+                stats.total,
+                " exercises done",
+                React.createElement("br", null),
+                "Good-practice match ",
+                stats.match,
+                "% \u00B7 Leadership score ",
+                stats.scoreN,
+                "/8",
+                React.createElement("br", null),
+                st.runs.length,
+                " experiment run",
+                st.runs.length === 1 ? "" : "s",
+                " logged"),
+            React.createElement("p", { className: "text-xs mt-2", style: { color: C.slate } }, "All figures are for your own learning. Time savings count checking and setup, and nothing here is a benchmark for any product or employer.")),
+        AUTHOR.linkedin && (React.createElement(Section, { title: "About the author" },
+            React.createElement("a", { href: AUTHOR.linkedin, target: "_blank", rel: "noreferrer", className: "inline-block rounded-xl px-4 font-semibold text-sm", style: { minHeight: 44, lineHeight: "44px", background: C.navy, color: "#fff" } }, "Connect with Nitin Sawant on LinkedIn"))),
+        React.createElement(Section, { title: "Your data" },
+            React.createElement("p", { className: "text-sm mb-2", style: { color: C.slate } }, "Saved in this browser on this device, and never sent anywhere. Clearing your browser data, or opening the page on another device, starts fresh. Resetting clears every answer, run and score."),
+            !confirm ? (React.createElement("button", { onClick: () => setConfirm(true), className: "rounded-xl px-4 font-semibold", style: { minHeight: 44, border: `1.5px solid ${C.coral}`, color: C.coral, background: "#fff" } }, "Reset everything")) : (React.createElement("div", { className: "flex gap-2" },
+                React.createElement("button", { onClick: () => { reset(); setConfirm(false); }, className: "rounded-xl px-4 font-semibold", style: { minHeight: 44, background: C.coral, color: "#fff" } }, "Yes, clear all"),
+                React.createElement("button", { onClick: () => setConfirm(false), className: "rounded-xl px-4", style: { minHeight: 44, border: `1px solid ${C.line}`, background: "#fff" } }, "Cancel"))))));
+}
+const TIERS_FINAL = [
+    [100, "Career Architect: Distinction", "You did everything and kept the evidence"], [90, "Career Architect: Merit", "Every chapter done, with strong evidence"],
+    [84, "Career Architect", "Every chapter read and every exercise completed"], [70, "Change Leader", "You are leading change with evidence"],
+    [55, "Evidence Builder", "You are building a record you can defend"], [40, "Judgment Keeper", "You are putting judgment in charge"],
+    [25, "Workflow Builder", "You have built and tested real workflows"], [10, "Task Mapper", "You understand your work"], [0, "Starter", "Your first step is the hardest"],
+];
+function RewardsView({ st, setSt, game, goTab }) {
+    var _a, _b;
+    const days = Array.from({ length: 14 }, (_, i) => { const d = new Date(); d.setDate(d.getDate() - (13 - i)); return { k: dkey(d), l: ["S", "M", "T", "W", "T", "F", "S"][d.getDay()] }; });
+    const set = new Set(st.days || []);
+    const earned = game.badges.filter((b) => b.earned).length;
+    const complete = game.chDone === 14;
+    const togo = 14 - game.chDone;
+    const tier = TIERS_FINAL.find((t) => game.xp >= t[0]);
+    const when = st.doneOn ? new Date(st.doneOn).toLocaleDateString() : new Date().toLocaleDateString();
+    const certText = `Certificate of Completion\n${((_a = st.name) === null || _a === void 0 ? void 0 : _a.trim()) || "Reader"} has completed “Your Next Career, Powered by AI”.\nFinal score: ${game.xp} / 100\nAchievement: ${game.finalTier}\nDate: ${when}\n(Self-assessed. The evidence portfolio is the proof.)`;
+    return (React.createElement("div", { className: "px-5 pt-8 pb-4" },
+        React.createElement("h1", { style: { fontFamily: SERIF, fontSize: 26, fontWeight: 700, color: C.navy } }, "Score and rewards"),
+        React.createElement("div", { className: "rounded-2xl p-4 mt-4", style: { background: C.navy, color: "#fff" } },
+            React.createElement("div", { className: "flex items-center gap-4" },
+                React.createElement(Ring, { pct: Math.min(game.xp, 100), color: C.amber, label: `${game.xp}`, sub: "of 100", size: 112 }),
+                React.createElement("div", null,
+                    React.createElement("div", { className: "text-sm", style: { color: "#AFC0D0" } }, "Current rank"),
+                    React.createElement("div", { style: { fontFamily: SERIF, fontSize: 22, fontWeight: 700 } }, tier[1]),
+                    React.createElement("div", { className: "text-xs mt-1", style: { color: "#AFC0D0" } }, game.nextAt ? `${r1(game.nextAt - game.xp)} points to ${game.nextName}` : "Top rank reached")))),
+        React.createElement(Section, { title: "Where your points come from", sub: "The same 100-point system as the Final Score page in the book." },
+            React.createElement("div", { className: "rounded-2xl p-4", style: { background: "#fff", border: `1px solid ${C.line}` } },
+                game.items.map((x) => (React.createElement("div", { key: x.l, className: "mb-3" },
+                    React.createElement("div", { className: "flex justify-between text-sm" },
+                        React.createElement("span", { style: { color: C.ink } }, x.l),
+                        React.createElement("b", { style: { color: C.navy } },
+                            x.got,
+                            " / ",
+                            x.max)),
+                    React.createElement("div", { className: "rounded-full overflow-hidden mt-1", style: { height: 8, background: C.mist } },
+                        React.createElement("div", { style: { width: `${(x.got / x.max) * 100}%`, height: "100%", background: x.c, transition: "width .5s" } }))))),
+                React.createElement("div", { className: "text-xs mt-3 mb-1 font-semibold", style: { color: C.slate } }, "Evidence bonuses in detail"),
+                game.ev.map((x) => React.createElement("div", { key: x.l, className: "flex justify-between text-xs py-1", style: { color: C.ink, borderTop: `1px solid ${C.mist}` } },
+                    React.createElement("span", null, x.l),
+                    React.createElement("span", null,
+                        x.got,
+                        " / ",
+                        x.max)))),
+            React.createElement("p", { className: "text-xs mt-2", style: { color: C.slate } }, "Points reward doing the work and keeping evidence, not speed. A stopped experiment still earns its points.")),
+        React.createElement(Section, { title: "Final achievement" }, !complete ? (React.createElement("div", { className: "rounded-2xl p-4", style: { background: C.paper, border: `1.5px dashed ${C.line}` } },
+            React.createElement("div", { className: "flex items-center gap-2 mb-1" },
+                React.createElement(Lock, { size: 18, color: C.slate }),
+                React.createElement("div", { style: { fontFamily: SERIF, fontWeight: 700, color: C.navy } }, "Certificate locked")),
+            React.createElement("p", { className: "text-sm", style: { color: C.ink, lineHeight: 1.5 } },
+                "Read and complete every exercise in all 14 chapters to unlock it. You have ",
+                game.chDone,
+                " of 14, so ",
+                togo,
+                " to go. Completing everything is worth 84 points, and the evidence bonuses decide whether you reach Merit or Distinction."),
+            React.createElement("button", { onClick: () => goTab("journey"), className: "mt-3 rounded-xl px-4 font-semibold", style: { minHeight: 44, background: C.teal, color: "#fff" } }, "Back to the journey"))) : (React.createElement("div", null,
+            React.createElement("div", { className: "rounded-2xl p-5 text-center", style: { background: "#fff", border: `3px solid ${C.amber}` } },
+                React.createElement(Trophy, { size: 30, color: C.amber, className: "mx-auto" }),
+                React.createElement("div", { style: { fontFamily: SERIF, fontSize: 22, fontWeight: 700, color: C.navy, marginTop: 6 } }, "Certificate of Completion"),
+                React.createElement("div", { className: "text-sm mt-3", style: { color: C.slate } }, "This certifies that"),
+                React.createElement("div", { style: { fontFamily: SERIF, fontSize: 22, fontWeight: 700, color: C.tealD, minHeight: 30 } }, ((_b = st.name) === null || _b === void 0 ? void 0 : _b.trim()) || "your name"),
+                React.createElement("div", { className: "text-sm", style: { color: C.slate } },
+                    "has completed ",
+                    React.createElement("i", null, "Your Next Career, Powered by AI")),
+                React.createElement("div", { style: { fontFamily: SERIF, fontSize: 34, fontWeight: 700, color: AMBER_T, marginTop: 10 } },
+                    game.xp,
+                    React.createElement("span", { style: { fontSize: 16, color: C.slate } }, " / 100")),
+                React.createElement("div", { style: { fontFamily: SERIF, fontSize: 18, fontWeight: 700, color: C.navy } }, game.finalTier),
+                React.createElement("div", { className: "text-xs mt-2", style: { color: C.slate } }, when),
+                React.createElement("div", { className: "text-xs mt-2 italic", style: { color: C.slate } }, "Self-assessed. Keep your evidence portfolio as the proof.")),
+            React.createElement("div", { className: "text-sm font-semibold mt-4 mb-1", style: { color: C.navy } }, "Your name on the certificate"),
+            React.createElement("input", { value: st.name || "", onChange: (e) => setSt((s) => ({ ...s, name: e.target.value })), className: "w-full rounded-xl p-3 text-sm", style: { border: `1.5px solid ${C.line}`, background: "#fff" }, placeholder: "Type your name" }),
+            React.createElement("div", { className: "mt-3" },
+                React.createElement(CopyBtn, { text: certText })),
+            game.xp < 100 && React.createElement("p", { className: "text-xs mt-3", style: { color: C.slate } }, game.xp >= 90 ? `${r1(100 - game.xp)} points from Distinction.` : `${r1(90 - game.xp)} points from Merit. Log three runs, finish the review, tick your scorecard and save three prompts.`)))),
+        React.createElement(Section, { title: "Achievement ranks" },
+            React.createElement("div", { className: "rounded-2xl overflow-hidden", style: { background: "#fff", border: `1px solid ${C.line}` } }, TIERS_FINAL.map((t) => {
+                const cur = t === tier;
+                return (React.createElement("div", { key: t[1], className: "flex items-center justify-between px-3 py-2 text-sm", style: { background: cur ? C.amberL : "#fff", borderTop: `1px solid ${C.mist}` } },
+                    React.createElement("span", { style: { color: C.navy, fontWeight: cur ? 700 : 500 } }, t[1]),
+                    React.createElement("span", { style: { color: C.slate } },
+                        t[0],
+                        "+")));
+            }))),
+        React.createElement(Section, { title: "Practice streak", sub: game.streak ? `${game.streak} day${game.streak === 1 ? "" : "s"} in a row. Any exercise, run or score counts.` : "Do one small thing today to start a streak." },
+            React.createElement("div", { className: "rounded-2xl p-3 flex justify-between", style: { background: "#fff", border: `1px solid ${C.line}` } }, days.map((d) => (React.createElement("div", { key: d.k, className: "flex flex-col items-center gap-1" },
+                React.createElement("div", { className: "flex items-center justify-center rounded-full", style: { width: 22, height: 22, background: set.has(d.k) ? C.amber : C.mist } }, set.has(d.k) && React.createElement(Flame, { size: 12, color: "#fff" })),
+                React.createElement("span", { style: { fontSize: 10, color: C.slate } }, d.l)))))),
+        React.createElement(Section, { title: `Badges (${earned} of ${game.badges.length})` },
+            React.createElement("div", { className: "grid grid-cols-2 gap-3" }, game.badges.map((b) => (React.createElement("div", { key: b.id, className: "rounded-2xl p-3", style: { background: b.earned ? "#fff" : C.paper, border: `1.5px solid ${b.earned ? C.amber : C.line}`, opacity: b.earned ? 1 : 0.85 } },
+                React.createElement("div", { className: "flex items-center justify-center rounded-full mb-2", style: { width: 40, height: 40, background: b.earned ? C.amber : C.mist } }, b.earned ? React.createElement(b.icon, { size: 20, color: "#fff" }) : React.createElement(Lock, { size: 16, color: C.slate })),
+                React.createElement("div", { className: "text-sm font-semibold", style: { color: C.navy } }, b.name),
+                React.createElement("div", { className: "text-xs mt-0.5", style: { color: C.slate } }, b.desc),
+                !b.earned && b.need > 1 && React.createElement("div", { className: "text-xs mt-1", style: { color: C.tealD } },
+                    b.have,
+                    " of ",
+                    b.need))))))));
+}
+function RunSheet({ p, st, setSt, onClose }) {
+    const ph = placeholdersOf(p.text);
+    const [vals, setVals] = useState({});
+    const [answer, setAnswer] = useState("");
+    const [saved, setSaved] = useState(false);
+    const [log, setLog] = useState({ e: 0, d: 5, c: 10, done: false });
+    const ready = ph.every((k) => (vals[k] || "").trim());
+    const final = fillPrompt(p.text, vals);
+    const pushHistory = () => setSt((s) => ({ ...s, history: [...(s.history || []), { id: p.id, title: p.title, when: Date.now(), out: answer.slice(0, 4000) }].slice(-15) }));
+    const saveAnswer = () => { pushHistory(); setSaved(true); };
+    const logRun = () => {
+        if (!saved) {
+            pushHistory();
+            setSaved(true);
+        }
+        setSt((s) => ({ ...s, runs: [...s.runs, { d: log.d, c: log.c, e: log.e, t: 0, pt: p.title }] }));
+        setLog((l) => ({ ...l, done: true }));
+    };
+    const step = (n, t) => React.createElement("div", { className: "flex items-center gap-2 mt-6 mb-2" },
+        React.createElement("span", { className: "flex items-center justify-center rounded-full shrink-0", style: { width: 24, height: 24, background: C.navy, color: "#fff", fontSize: 12, fontWeight: 700 } }, n),
+        React.createElement("h2", { style: { fontFamily: SERIF, fontSize: 17, fontWeight: 700, color: C.navy } }, t));
+    return (React.createElement("div", { className: "absolute inset-0 overflow-y-auto", style: { background: C.paper, zIndex: 30 } },
+        React.createElement("div", { className: "px-5 pt-6 pb-24" },
+            React.createElement("div", { className: "flex items-start justify-between gap-3" },
+                React.createElement("div", null,
+                    React.createElement("div", { className: "text-xs", style: { color: C.slate } }, "Use this prompt"),
+                    React.createElement("h1", { style: { fontFamily: SERIF, fontSize: 22, fontWeight: 700, color: C.navy, lineHeight: 1.2 } }, p.title)),
+                React.createElement("button", { onClick: onClose, "aria-label": "Close", className: "rounded-full flex items-center justify-center shrink-0", style: { width: 40, height: 40, background: "#fff", border: `1px solid ${C.line}` } },
+                    React.createElement(X, { size: 18 }))),
+            step(1, ph.length ? "Add your material" : "Read the prompt"),
+            ph.length === 0 && React.createElement("div", { className: "rounded-xl p-3 text-xs", style: { background: C.mist, color: C.ink, fontFamily: "ui-monospace, Menlo, Consolas, monospace", lineHeight: 1.5, whiteSpace: "pre-wrap" } }, p.text),
+            ph.map((k) => (React.createElement("div", { key: k, className: "mb-3" },
+                React.createElement("label", { className: "text-sm font-semibold", style: { color: C.navy } }, k.charAt(0).toUpperCase() + k.slice(1)),
+                React.createElement("textarea", { value: vals[k] || "", onChange: (e) => setVals((v) => ({ ...v, [k]: e.target.value })), rows: 4, className: "w-full mt-1 rounded-xl p-3 text-sm", style: { border: `1.5px solid ${C.line}`, background: "#fff", fontFamily: SANS }, placeholder: "Fictional or approved information only" })))),
+            step(2, "Copy it into your assistant"),
+            React.createElement("div", { className: "rounded-xl p-3 text-xs", style: { background: C.mist, color: C.ink, fontFamily: "ui-monospace, Menlo, Consolas, monospace", lineHeight: 1.5, whiteSpace: "pre-wrap", userSelect: "text" } }, showPrompt(final)),
+            React.createElement("div", { className: "flex flex-wrap items-center gap-2 mt-3" },
+                React.createElement(CopyBtn, { text: showPrompt(final) }),
+                React.createElement("a", { href: "https://claude.ai", target: "_blank", rel: "noreferrer", className: "rounded-lg px-3 text-sm font-semibold", style: { minHeight: 40, lineHeight: "40px", background: C.navy, color: "#fff" } }, "Open Claude"),
+                React.createElement("a", { href: "https://chatgpt.com", target: "_blank", rel: "noreferrer", className: "rounded-lg px-3 text-sm", style: { minHeight: 40, lineHeight: "38px", border: `1.5px solid ${C.line}`, color: C.tealD } }, "Open ChatGPT")),
+            !ready && ph.length > 0 && React.createElement("p", { className: "text-xs mt-2", style: { color: C.slate } }, "Fill every box above first, so the copied prompt contains your material."),
+            React.createElement("p", { className: "text-xs mt-2", style: { color: C.slate } }, "Paste only fictional or approved information into any assistant, and use a tool your organisation approves. Need an account? See \u201CSet up an assistant account\u201D in the Me tab."),
+            step(3, "Paste the answer (optional)"),
+            React.createElement("textarea", { value: answer, onChange: (e) => setAnswer(e.target.value), rows: 5, className: "w-full rounded-xl p-3 text-sm", style: { border: `1.5px solid ${C.line}`, background: "#fff", fontFamily: SANS }, placeholder: "Paste the assistant\u2019s answer here to keep it in your history on this device" }),
+            React.createElement("p", { className: "text-xs mt-1", style: { color: C.slate } }, "This is a draft. Check every fact against your own sources before you use it."),
+            React.createElement("button", { onClick: saveAnswer, disabled: saved, className: "mt-2 rounded-xl px-4 font-semibold", style: { minHeight: 44, background: saved ? C.sage : C.teal, color: "#fff" } }, saved ? "Saved to history" : "Save to history"),
+            step(4, "Log this run in Measure"),
+            React.createElement("div", { className: "rounded-2xl p-4", style: { background: "#fff", border: `1px solid ${C.line}` } },
+                React.createElement("div", { className: "text-sm font-semibold mb-2" }, "Material errors you found"),
+                React.createElement(Seg, { options: [0, 1, 2, 3].map((v) => ({ v, l: v === 3 ? "3+" : `${v}` })), value: log.e, onChange: (v) => setLog((l) => ({ ...l, e: v })), color: C.coral }),
+                React.createElement("div", { className: "text-sm font-semibold mt-3 mb-2" }, "Minutes to get the draft"),
+                React.createElement(Seg, { options: [5, 10, 15].map((v) => ({ v, l: `${v}` })), value: log.d, onChange: (v) => setLog((l) => ({ ...l, d: v })), color: C.teal }),
+                React.createElement("div", { className: "text-sm font-semibold mt-3 mb-2" }, "Minutes to check and fix"),
+                React.createElement(Seg, { options: [5, 10, 20, 30, 60].map((v) => ({ v, l: `${v}` })), value: log.c, onChange: (v) => setLog((l) => ({ ...l, c: v })), color: C.amber }),
+                React.createElement("button", { onClick: logRun, disabled: log.done, className: "w-full mt-4 rounded-xl font-semibold", style: { minHeight: 48, background: log.done ? C.sage : C.navy, color: "#fff" } }, log.done ? "Logged in Measure" : "Log this run")))));
+}
+function PromptsView({ st, setSt, focus, clearFocus }) {
+    const [seg, setSeg] = useState("mine");
+    const [sheet, setSheet] = useState(null);
+    const [edit, setEdit] = useState(null);
+    const [open, setOpen] = useState(null);
+    const mine = st.prompts || [];
+    useEffect(() => {
+        if (!focus)
+            return;
+        const base = STARTER_PROMPTS.find((x) => x.id === focus);
+        const own = mine.find((x) => x.src === focus);
+        if (own || base)
+            setSheet(own || base);
+        clearFocus();
+    }, [focus]);
+    const saved = (id) => mine.some((x) => x.src === id);
+    const save = (b) => setSt((s) => ({ ...s, prompts: saved(b.id) ? s.prompts.filter((x) => x.src !== b.id) : [...s.prompts, { id: `b-${b.id}`, title: b.title.replace(/^Ch \d+: /, ""), text: b.text, src: b.id }] }));
+    const commit = () => {
+        if (!edit.title.trim() || !edit.text.trim())
+            return;
+        setSt((s) => edit.id ? { ...s, prompts: s.prompts.map((x) => x.id === edit.id ? { ...x, title: edit.title, text: edit.text } : x) }
+            : { ...s, prompts: [...s.prompts, { id: `u${Date.now()}`, title: edit.title.trim(), text: edit.text.trim(), src: "own" }] });
+        setEdit(null);
+    };
+    const del = (id) => setSt((s) => ({ ...s, prompts: s.prompts.filter((x) => x.id !== id) }));
+    const card = { background: "#fff", border: `1px solid ${C.line}` };
+    const PromptCard = ({ p, own }) => (React.createElement("div", { className: "rounded-2xl p-4 mb-3", style: card },
+        React.createElement("div", { style: { fontFamily: SERIF, fontWeight: 700, color: C.navy, fontSize: 16 } }, p.title),
+        React.createElement("p", { className: "text-xs mt-1", style: { color: C.slate, display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden" } }, showPrompt(p.text)),
+        React.createElement("div", { className: "flex flex-wrap gap-2 mt-3" },
+            React.createElement("button", { onClick: () => setSheet(p), className: "rounded-lg px-3 font-semibold flex items-center gap-1 text-sm", style: { minHeight: 40, background: C.teal, color: "#fff" } },
+                React.createElement(Play, { size: 14 }),
+                " Use"),
+            own ? (React.createElement(React.Fragment, null,
+                React.createElement("button", { onClick: () => setEdit({ id: p.id, title: p.title, text: p.text }), className: "rounded-lg px-3 text-sm", style: { minHeight: 40, border: `1px solid ${C.line}` } }, "Edit"),
+                React.createElement("button", { onClick: () => del(p.id), className: "rounded-lg px-3 text-sm", style: { minHeight: 40, border: `1px solid ${C.coral}`, color: C.coral } }, "Delete"))) : (React.createElement("button", { onClick: () => save(p), className: "rounded-lg px-3 text-sm font-semibold", style: { minHeight: 40, border: `1.5px solid ${saved(p.id) ? C.sage : C.indigo}`, color: saved(p.id) ? C.sage : C.indigo, background: saved(p.id) ? C.sageL : "#fff" } }, saved(p.id) ? "Saved to my catalogue" : "Save to my catalogue")))));
+    const groups = ["From the chapters", "Everyday"];
+    return (React.createElement("div", { className: "px-5 pt-8 pb-4" },
+        React.createElement("h1", { style: { fontFamily: SERIF, fontSize: 26, fontWeight: 700, color: C.navy } }, "Prompts"),
+        React.createElement("p", { className: "text-sm mt-1", style: { color: C.slate } }, "Your catalogue of tested prompts. Pick one, fill in your material, copy it and paste it into Claude or ChatGPT."),
+        React.createElement("div", { className: "flex gap-2 mt-4 overflow-x-auto pb-1" }, [["mine", `My prompts (${mine.length})`], ["starter", "Starter set"], ["hist", `History (${(st.history || []).length})`]].map(([k, l]) => (React.createElement("button", { key: k, onClick: () => setSeg(k), className: "rounded-full px-4 text-sm shrink-0", style: { minHeight: 40, background: seg === k ? C.navy : "#fff", color: seg === k ? "#fff" : C.ink, border: `1px solid ${seg === k ? C.navy : C.line}` } }, l)))),
+        seg === "mine" && (React.createElement("div", { className: "mt-4" },
+            edit ? (React.createElement("div", { className: "rounded-2xl p-4 mb-4", style: card },
+                React.createElement("div", { className: "text-sm font-semibold mb-1" }, "Name"),
+                React.createElement("input", { value: edit.title, onChange: (e) => setEdit({ ...edit, title: e.target.value }), className: "w-full rounded-xl p-3 text-sm", style: { border: `1.5px solid ${C.line}` }, placeholder: "e.g. Weekly status update" }),
+                React.createElement("div", { className: "text-sm font-semibold mt-3 mb-1" }, "Prompt"),
+                React.createElement("textarea", { value: edit.text, onChange: (e) => setEdit({ ...edit, text: e.target.value }), rows: 7, className: "w-full rounded-xl p-3 text-sm", style: { border: `1.5px solid ${C.line}` }, placeholder: "Write the instruction. Put the parts you fill in each time in double braces, like {{paste your notes}}." }),
+                React.createElement("p", { className: "text-xs mt-1", style: { color: C.slate } }, "Keep one job per prompt, keep real data out, and say what to do when evidence is missing."),
+                React.createElement("div", { className: "flex gap-2 mt-3" },
+                    React.createElement("button", { onClick: commit, className: "rounded-xl px-4 font-semibold", style: { minHeight: 44, background: C.teal, color: "#fff" } }, "Save prompt"),
+                    React.createElement("button", { onClick: () => setEdit(null), className: "rounded-xl px-4", style: { minHeight: 44, border: `1px solid ${C.line}`, background: "#fff" } }, "Cancel")))) : (React.createElement("button", { onClick: () => setEdit({ title: "", text: "" }), className: "w-full rounded-xl flex items-center justify-center gap-2 font-semibold mb-4", style: { minHeight: 48, border: `1.5px dashed ${C.indigo}`, color: C.indigo, background: "#fff" } },
+                React.createElement(Plus, { size: 18 }),
+                " Write my own prompt")),
+            mine.length === 0 && !edit && (React.createElement("div", { className: "rounded-2xl p-4 text-sm", style: { background: C.mist, color: C.slate } }, "Your catalogue is empty. Save prompts from the Starter set, or write your own. Keep the ones that pass your checks.")),
+            mine.map((p) => React.createElement(PromptCard, { key: p.id, p: p, own: true })))),
+        seg === "starter" && (React.createElement("div", { className: "mt-4" }, groups.map((g) => (React.createElement("div", { key: g, className: "mb-2" },
+            React.createElement("h2", { style: { fontFamily: SERIF, fontSize: 17, fontWeight: 700, color: C.navy }, className: "mb-2" }, g),
+            STARTER_PROMPTS.filter((x) => x.group === g).map((p) => React.createElement(PromptCard, { key: p.id, p: p }))))))),
+        seg === "hist" && (React.createElement("div", { className: "mt-4" },
+            (st.history || []).length === 0 && React.createElement("div", { className: "rounded-2xl p-4 text-sm", style: { background: C.mist, color: C.slate } }, "Nothing yet. Answers you save after using a prompt appear here, newest first."),
+            [...(st.history || [])].reverse().map((h, i) => (React.createElement("div", { key: i, className: "rounded-2xl mb-3 overflow-hidden", style: card },
+                React.createElement("button", { onClick: () => setOpen(open === i ? null : i), className: "w-full text-left p-4 flex items-center justify-between" },
+                    React.createElement("div", null,
+                        React.createElement("div", { className: "text-sm font-semibold", style: { color: C.navy } }, h.title),
+                        React.createElement("div", { className: "text-xs", style: { color: C.slate } }, new Date(h.when).toLocaleString())),
+                    React.createElement(ChevronRight, { size: 18, color: C.slate, style: { transform: open === i ? "rotate(90deg)" : "none" } })),
+                open === i && React.createElement("div", { className: "px-4 pb-4" },
+                    React.createElement("div", { className: "text-sm mb-2", style: { whiteSpace: "pre-wrap", lineHeight: 1.6, userSelect: "text" } }, h.out || "No answer was pasted."),
+                    h.out && React.createElement(CopyBtn, { text: h.out }))))))),
+        sheet && React.createElement(RunSheet, { p: sheet, st: st, setSt: setSt, onClose: () => setSheet(null) })));
+}
+/* --------------------------------------------------------------------- app */
+function App() {
+    var _a, _b;
+    const [st, setSt] = useState(INITIAL);
+    const [loaded, setLoaded] = useState(false);
+    const [tab, setTab] = useState("home");
+    const [chapter, setChapter] = useState(null);
+    const scroller = useRef(null);
+    const [toast, setToast] = useState(null);
+    const [focus, setFocus] = useState(null);
+    const prev = useRef(null);
+    useEffect(() => {
+        (async () => {
+            try {
+                const raw = window.localStorage.getItem(KEY);
+                if (raw)
+                    setSt({ ...INITIAL, ...JSON.parse(raw) });
+            }
+            catch (e) { /* first run: nothing stored */ }
+            setLoaded(true);
+        })();
+    }, []);
+    useEffect(() => {
+        if (!loaded)
+            return;
+        const t = setTimeout(async () => {
+            try {
+                window.localStorage.setItem(KEY, JSON.stringify(st));
+            }
+            catch (e) {
+                console.error("Save failed", e);
+            }
+        }, 300);
+        return () => clearTimeout(t);
+    }, [st, loaded]);
+    useEffect(() => { if (scroller.current)
+        scroller.current.scrollTop = 0; }, [tab, chapter]);
+    const setStG = (fn) => setSt((s) => touchDay(typeof fn === "function" ? fn(s) : fn));
+    const setAnswer = (aid, qid, i) => setStG((s) => ({ ...s, answers: { ...s.answers, [aid]: { ...(s.answers[aid] || {}), [qid]: i } } }));
+    const toggleRead = (n) => setStG((s) => { var _a; return ({ ...s, read: { ...(s.read || {}), [n]: !((_a = s.read) === null || _a === void 0 ? void 0 : _a[n]) } }); });
+    const resetAction = (aid) => setSt((s) => { const a = { ...s.answers }; delete a[aid]; return { ...s, answers: a }; });
+    const reset = () => setSt(INITIAL);
+    const game = useMemo(() => computeGame(st), [st]);
+    useEffect(() => {
+        if (!loaded)
+            return;
+        const cur = { xp: game.xp, level: game.level, done: game.done, chd: game.chDone, badges: new Set(game.badges.filter((b) => b.earned).map((b) => b.id)) };
+        const p = prev.current;
+        if (p) {
+            const newB = game.badges.filter((b) => b.earned && !p.badges.has(b.id));
+            if (cur.level > p.level)
+                setToast({ k: "level", t: `Level ${game.level}: ${game.levelName}`, s: "You levelled up.", conf: true });
+            else if (newB.length)
+                setToast({ k: "badge", t: `Badge unlocked: ${newB[0].name}`, s: newB[0].desc, conf: true });
+            else if (cur.chd === 14 && p.chd < 14)
+                setToast({ k: "level", t: "Book complete: certificate unlocked", s: `Final score ${game.xp} / 100`, conf: true });
+            else if (cur.chd > p.chd)
+                setToast({ k: "badge", t: `Chapter ${game.chDone} of 14 complete`, s: "Every step ticked off.", conf: true });
+            else if (cur.done > p.done)
+                setToast({ k: "xp", t: "Exercise complete", s: `+${r1(Math.max(cur.xp - p.xp, 0))} points`, conf: false });
+        }
+        prev.current = cur;
+    }, [game, loaded]);
+    useEffect(() => { var _a; if (!loaded)
+        return; const t = dkey(new Date()); if (((_a = st.snap) === null || _a === void 0 ? void 0 : _a.date) !== t)
+        setSt((s) => ({ ...s, snap: { date: t, start: game.xp } })); }, [loaded, game.xp]);
+    const today = r1(Math.max(game.xp - ((_b = (_a = st.snap) === null || _a === void 0 ? void 0 : _a.start) !== null && _b !== void 0 ? _b : game.xp), 0));
+    useEffect(() => { if (loaded && game.chDone === 14 && !st.doneOn)
+        setSt((s) => ({ ...s, doneOn: Date.now() })); }, [game.chDone, loaded]);
+    useEffect(() => { if (!toast)
+        return; const t = setTimeout(() => setToast(null), 3600); return () => clearTimeout(t); }, [toast]);
+    const stats = useMemo(() => {
+        const total = allActions.length;
+        const done = allActions.filter((a) => actionDone(a, st.answers)).length;
+        const chaptersDone = CHAPTERS.filter((c) => chComplete(c, st)).length;
+        const stepsDone = CHAPTERS.reduce((t, c) => t + chSteps(c, st).done, 0), stepsTotal = CHAPTERS.reduce((t, c) => t + chSteps(c, st).total, 0);
+        let good = 0, graded = 0;
+        allActions.forEach((a) => a.qs.forEach((q) => {
+            var _a;
+            const v = (_a = st.answers[a.id]) === null || _a === void 0 ? void 0 : _a[q.id];
+            if (q.best !== undefined && v !== undefined) {
+                graded++;
+                if (v === q.best)
+                    good++;
+            }
+        }));
+        const runs = st.runs;
+        const netMin = runs.length ? runs.reduce((s, r) => s + st.baseline - (r.d + r.c), 0) - st.setup : null;
+        return {
+            total, done, chaptersDone, stepsDone, stepsTotal, completion: Math.round((stepsDone / stepsTotal) * 100), pct: Math.round((done / total) * 100),
+            match: graded ? Math.round((good / graded) * 100) : 0,
+            netMin, errors: runs.length ? runs.reduce((s, r) => s + r.e, 0) : null,
+            scoreN: Object.values(st.score).filter(Boolean).length,
+        };
+    }, [st]);
+    const openPrompt = (id) => { setFocus(id); setChapter(null); setTab("prompts"); };
+    const goChapter = (n) => { setChapter(n); setTab("journey"); };
+    const goTab = (t) => { setChapter(null); setTab(t); };
+    if (!loaded)
+        return React.createElement("div", { className: "min-h-screen flex items-center justify-center", style: { background: C.paper, color: C.slate, fontFamily: SANS } }, "Loading your progress\u2026");
+    const ch = chapter ? CHAPTERS.find((c) => c.n === chapter) : null;
+    const navItems = [["home", "Home", Home], ["journey", "Journey", MapIcon], ["prompts", "Prompts", Sparkles], ["measure", "Measure", BarChart3], ["me", "Me", User]];
+    return (React.createElement("div", { className: "mx-auto flex flex-col app-shell", style: { maxWidth: 440, background: C.paper, fontFamily: SANS, color: C.ink, position: "relative" } },
+        React.createElement("div", { ref: scroller, className: "flex-1 overflow-y-auto", style: { paddingBottom: 90 } },
+            tab === "home" && React.createElement(HomeView, { st: st, setSt: setStG, stats: stats, game: game, today: today, goChapter: goChapter, goTab: goTab }),
+            tab === "journey" && !ch && React.createElement(JourneyView, { st: st, goChapter: goChapter }),
+            tab === "journey" && ch && React.createElement(ChapterView, { ch: ch, st: st, setAnswer: setAnswer, resetAction: resetAction, toggleRead: toggleRead, openPrompt: openPrompt, back: () => setChapter(null) }),
+            tab === "measure" && React.createElement(MeasureView, { st: st, setSt: setStG, stats: stats }),
+            tab === "prompts" && React.createElement(PromptsView, { st: st, setSt: setStG, focus: focus, clearFocus: () => setFocus(null) }),
+            tab === "rewards" && React.createElement(RewardsView, { st: st, setSt: setStG, game: game, goTab: goTab }),
+            tab === "me" && React.createElement(MeView, { st: st, setSt: setSt, stats: stats, reset: reset, goTab: goTab })),
+        React.createElement("style", null, CONFETTI_CSS),
+        toast && (React.createElement(React.Fragment, null,
+            toast.conf && React.createElement(Confetti, null),
+            React.createElement("div", { className: "nc-toast absolute left-4 right-4 rounded-2xl p-4 flex items-center gap-3", role: "status", style: { top: 14, zIndex: 50, background: C.navy, color: "#fff", border: `2px solid ${C.amber}`, animation: "ncSlide .35s ease-out" } },
+                React.createElement("div", { className: "flex items-center justify-center rounded-full shrink-0", style: { width: 38, height: 38, background: C.amber } }, toast.k === "xp" ? React.createElement(Check, { size: 20, color: "#fff" }) : toast.k === "level" ? React.createElement(Trophy, { size: 20, color: "#fff" }) : React.createElement(Star, { size: 20, color: "#fff" })),
+                React.createElement("div", null,
+                    React.createElement("div", { style: { fontFamily: SERIF, fontWeight: 700, fontSize: 16 } }, toast.t),
+                    React.createElement("div", { className: "text-sm", style: { color: "#D4E0EB" } }, toast.s))))),
+        React.createElement("nav", { className: "absolute bottom-0 left-0 right-0 flex", style: { background: "#fff", borderTop: `1px solid ${C.line}` }, "aria-label": "Main" }, navItems.map(([k, l, Icon]) => {
+            const on = tab === k;
+            return (React.createElement("button", { key: k, onClick: () => goTab(k), className: "flex-1 flex flex-col items-center justify-center gap-0.5", style: { minHeight: 64, color: on ? C.teal : C.slate }, "aria-current": on ? "page" : undefined },
+                React.createElement(Icon, { size: 22, strokeWidth: on ? 2.4 : 1.8 }),
+                React.createElement("span", { style: { fontSize: 12, fontWeight: on ? 700 : 500 } }, l)));
+        }))));
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App));
+};
+window.__boot();
+</script>
+</body>
+</html>
